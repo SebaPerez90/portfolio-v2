@@ -1,0 +1,24 @@
+{
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contact",
+        "ariaLabel": "contact me",
+        "href": ""
+      },
+      {
+        "id": 2,
+        "label": "Plans",
+        "ariaLabel": "pricing plans",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "label": "Questions",
+        "ariaLabel": "frequently asked questions",
+        "href": ""
+      }
+    ]
+  }
+}
