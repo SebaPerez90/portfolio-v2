@@ -1,4 +1,5 @@
-import avatar_profile from '@/assets/avatar-profile.webp';
+// import avatar_profile from '@/assets/avatar-profile.webp';
+import avatar_profile from '@/assets/WhatsApp-Image-2024-08-25-at-12.29.01_7362a2b7.webp';
 
 const AvatarProfile = () => {
   return (

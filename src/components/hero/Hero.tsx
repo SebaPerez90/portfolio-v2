@@ -5,7 +5,7 @@ import PophoverCvDownload from './PophoverCvDownload';
 
 const Hero = () => {
   return (
-    <section id="hero-section" className="relative bg-white dark:bg-dark-main row-center  h-screen overflow-hidden">
+    <section id="hero-section" className="relative bg-white dark:bg-dark-main row-center  h-screen overflow-hidden gap-32">
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
         {/* <span className="paragraph text-base">Hola! mi nombre es Seba</span> */}
@@ -24,8 +24,10 @@ const Hero = () => {
           el primer click.
         </p>
 
-        <div className="z-50 flex items-center gap-4 mt-8">
-          <Button>Conocé más sobre mi</Button>
+        <div className="z-50 row-center mt-8">
+          <Button size={"lg"} variant={"primary"}>
+            Conocé más sobre mi
+          </Button>
           <PophoverCvDownload />
         </div>
       </div>
