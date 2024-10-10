@@ -1,24 +1,24 @@
 {
-  "header": {
-    "content": [
-      {
-        "id": 1,
-        "label": "Contacto",
-        "ariaLabel": "contactame",
-        "href": ""
-      },
-      {
-        "id": 2,
-        "label": "Planes",
-        "ariaLabel": "precio de los planes",
-        "href": ""
-      },
-      {
-        "id": 3,
-        "label": "Preguntas",
-        "ariaLabel": "preguntas frecuentes",
-        "href": ""
-      }
-    ]
-  }
+	"header": {
+		"content": [
+			{
+				"id": 1,
+				"label": "Contáctame",
+				"ariaLabel": "contactame",
+				"href": ""
+			},
+			{
+				"id": 2,
+				"label": "Experiencia",
+				"ariaLabel": "precio de los planes",
+				"href": ""
+			},
+			{
+				"id": 3,
+				"label": "Proyectos",
+				"ariaLabel": "preguntas frecuentes",
+				"href": ""
+			}
+		]
+	}
 }

@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react';
-import MobileMenu from '@/components/header/MobileMenu';
-import ThemeButton from '@/components/header/ThemeButton';
 import { LanguageSelect } from '@/components/header/LanguageSelect';
+import MobileMenu from '@/components/header/MobileMenu';
 import NavegationLinks from '@/components/header/NavegationLinks';
+import ThemeButton from '@/components/header/ThemeButton';
+import { useEffect, useRef } from 'react';
 
 const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -20,9 +20,9 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="flex items-center fixed w-full justify-between px-7 py-4 backdrop-blur-[8px] bg-white/50 z-50 dark:bg-dark-deep"
+      className="flex items-center fixed w-full justify-between px-7 py-4 backdrop-blur-[8px] bg-transparent z-50 dark:bg-dark-deep"
     >
-      <span className='text-custom-blue font-bold text-2xl'>SebaPerez</span>
+      <span className="text-custom-blue font-extrabold text-2xl">SebaPerez</span>
       <NavegationLinks disappear={'hidden sm:block'} flexDirection={'row-center'} />
       <div className="hidden min-[640px]:row-center  gap-2">
         <LanguageSelect />

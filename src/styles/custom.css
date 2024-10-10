@@ -1,71 +1,71 @@
 /*!loading button */
 .loader {
-    border: 4px solid rgba(0, 0, 0, .1);
-    border-left-color: transparent;
-    border-radius: 50%;
-    position: relative;
-    right: 1em;
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-left-color: transparent;
+	border-radius: 50%;
+	position: relative;
+	right: 1em;
 }
 
 .loader {
-    border: 4px solid rgba(0, 0, 0, .1);
-    border-left-color: transparent;
-    width: 19px;
-    height: 19px;
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-left-color: transparent;
+	width: 19px;
+	height: 19px;
 }
 
 .loader {
-    border: 4px solid #3300ff;
-    border-left-color: transparent;
-    width: 19px;
-    height: 19px;
-    animation: spin89345 1s linear infinite;
+	border: 4px solid #3300ff;
+	border-left-color: transparent;
+	width: 19px;
+	height: 19px;
+	animation: spin89345 1s linear infinite;
 }
 
 @keyframes spin89345 {
-    0% {
-        transform: rotate(0deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 /*!Theme button */
 .toggle {
-    background-color: #a855f7;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    box-shadow: 0 0 50px 20px rgba(0, 0, 0, .1);
-    line-height: 1;
-  }
-  
-  .input {
-    display: none;
-  }
-  
-  .icon {
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-    transition: transform 500ms;
-  }
-  
-  .icon--moon {
-    transition-delay: 200ms;
-  }
-  
-  .icon--sun {
-    transform: scale(0);
-  }
-  
-  #switch:checked + .icon--moon {
-    transform: rotate(360deg) scale(0);
-  }
-  
-  #switch:checked ~ .icon--sun {
-    transition-delay: 200ms;
-    transform: scale(1) rotate(360deg);
-  }
+	background-color: #a855f7;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+	box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
+	line-height: 1;
+}
+
+.input {
+	display: none;
+}
+
+.icon {
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
+	transition: transform 500ms;
+}
+
+.icon--moon {
+	transition-delay: 200ms;
+}
+
+.icon--sun {
+	transform: scale(0);
+}
+
+#switch:checked + .icon--moon {
+	transform: rotate(360deg) scale(0);
+}
+
+#switch:checked ~ .icon--sun {
+	transition-delay: 200ms;
+	transform: scale(1) rotate(360deg);
+}

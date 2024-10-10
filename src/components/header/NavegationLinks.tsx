@@ -1,8 +1,8 @@
-import { useAnimate, stagger, useInView } from 'framer-motion';
-import { useEffect } from 'react';
+import type { LocaleNavLinks } from '@/types/index';
+import { stagger, useAnimate, useInView } from 'framer-motion';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import type   { LocaleNavLinks } from '@/types/index';
 
 interface NavegationLinksProps {
   disappear: string;

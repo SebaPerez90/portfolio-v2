@@ -40,7 +40,7 @@ const HamburguerButton = ({ isOpen, setIsOpen }: HamburguerButtonProps) => {
     <>
       <button
         type="button"
-        aria-label="button-menu"
+        aria-label="boton menu hamburguesa"
         className="sm:hidden flex flex-col gap-1 cursor-pointer z-[100]"
         onClick={openMenu}
       >
