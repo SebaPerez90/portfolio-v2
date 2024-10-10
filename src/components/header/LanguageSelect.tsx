@@ -2,27 +2,25 @@ import englishIcon from '@/assets/english-icon.png';
 import spanishIcon from '@/assets/spanish-icon.png';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { useEffect, useState } from 'react';
-// import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import toast from 'react-hot-toast';
 import { IoMdInformationCircle } from 'react-icons/io';
 
 export function LanguageSelect() {
-  // const { i18n, t } = useTranslation()
+  const { i18n, t } = useTranslation();
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('lang') || 'en');
 
   useEffect(() => {
-    // i18n.changeLanguage(currentLang)
+    i18n.changeLanguage(currentLang)
     localStorage.setItem('lang', currentLang);
-    // }, [currentLang, i18n])
-  }, [currentLang]);
+  }, [currentLang, i18n]);
 
   const toggleLanguage = (value: string) => {
     setCurrentLang(value);
     toast.custom(
       <p className="py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2">
         <IoMdInformationCircle size={20} color="#6897fc" />
-        {/* {t('navbar.toggleLang')} */}
-        english-test
+        {t('preferences.lang')}
       </p>,
     );
   };

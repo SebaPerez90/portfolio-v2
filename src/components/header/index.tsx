@@ -24,7 +24,7 @@ const Header = () => {
     >
       <span className="text-custom-blue font-extrabold text-2xl">SebaPerez</span>
       <NavegationLinks disappear={'hidden sm:block'} flexDirection={'row-center'} />
-      <div className="hidden min-[640px]:row-center  gap-2">
+      <div className="max-[640px]:hidden row-center gap-3">
         <LanguageSelect />
         <ThemeButton />
       </div>

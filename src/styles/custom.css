@@ -41,6 +41,7 @@
 	cursor: pointer;
 	box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1);
 	line-height: 1;
+	padding: 0.5em;
 }
 
 .input {
@@ -61,11 +62,11 @@
 	transform: scale(0);
 }
 
-#switch:checked + .icon--moon {
+#switch:checked+.icon--moon {
 	transform: rotate(360deg) scale(0);
 }
 
-#switch:checked ~ .icon--sun {
+#switch:checked~.icon--sun {
 	transition-delay: 200ms;
 	transform: scale(1) rotate(360deg);
 }

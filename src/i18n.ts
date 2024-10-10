@@ -12,10 +12,10 @@ const resources = {
     translation: {
       ...enHeader, // Expande el objeto de landing
     },
-    es: {
-      translation: {
-        ...esHeader, // Expande el objeto de landing
-      },
+  },
+  es: {
+    translation: {
+      ...esHeader, // Expande el objeto de landing
     },
   },
 };

@@ -1,24 +1,35 @@
 {
-	"header": {
-		"content": [
-			{
-				"id": 1,
-				"label": "Contáctame",
-				"ariaLabel": "contactame",
-				"href": ""
-			},
-			{
-				"id": 2,
-				"label": "Experiencia",
-				"ariaLabel": "precio de los planes",
-				"href": ""
-			},
-			{
-				"id": 3,
-				"label": "Proyectos",
-				"ariaLabel": "preguntas frecuentes",
-				"href": ""
-			}
-		]
-	}
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contáctame",
+        "ariaLabel": "contactame",
+        "href": ""
+      },
+      {
+        "id": 2,
+        "label": "Experiencia",
+        "ariaLabel": "precio de los planes",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "label": "Proyectos",
+        "ariaLabel": "preguntas frecuentes",
+        "href": ""
+      }
+    ]
+  },
+  "toaster": {
+    "contact": {
+      "loading": "Enviando...",
+      "success": "Mensaje enviado!",
+      "error": "Ocurrió un error"
+    },
+    "preferences": {
+      "lang": "Language changed",
+      "theme": "Tema cambiado"
+    }
+  }
 }
