@@ -17,7 +17,7 @@ const ThemeButton = () => {
     toast.custom(
       <p className="py-3 px-5 bg-white shadow-lg  dark:bg-black font-medium rounded-md flex items-center mt-4 gap-2">
         <IoMdInformationCircle size={20} color="#6897fc" />
-        {t('preferences.theme')}
+        {t('toaster.preferences.theme')}
       </p>,
     );
   };

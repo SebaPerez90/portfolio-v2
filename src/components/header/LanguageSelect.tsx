@@ -20,7 +20,7 @@ export function LanguageSelect() {
     toast.custom(
       <p className="py-3 px-5 bg-white shadow-lg dark:bg-dark-soft font-medium rounded-md flex items-center mt-4 gap-2">
         <IoMdInformationCircle size={20} color="#6897fc" />
-        {t('preferences.lang')}
+        {t('toaster.preferences.lang')}
       </p>,
     );
   };
