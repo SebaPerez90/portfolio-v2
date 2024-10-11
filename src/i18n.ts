@@ -2,8 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 // Importar todos los archivos JSON de traducción
-import enHeader from '@/locales/en/header.json';
-import esHeader from '@/locales/es/header.json';
+import enHeader from '@/locales/en/index.json';
+import esHeader from '@/locales/es/index.json';
 
 // Configurar los recursos de idioma
 // @ts-ignore

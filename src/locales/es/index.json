@@ -1,0 +1,94 @@
+{
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contáctame",
+        "ariaLabel": "contactame",
+        "href": ""
+      },
+      {
+        "id": 2,
+        "label": "Experiencia",
+        "ariaLabel": "precio de los planes",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "label": "Proyectos",
+        "ariaLabel": "preguntas frecuentes",
+        "href": ""
+      }
+    ]
+  },
+
+  "toaster": {
+    "contact": {
+      "loading": "Enviando...",
+      "success": "Mensaje enviado!",
+      "error": "Ocurrió un error"
+    },
+    "preferences": {
+      "lang": "Language changed",
+      "theme": "Tema cambiado"
+    }
+  },
+
+  "contact-form": {
+    "title": "Unete hoy a la expansión digital",
+    "description": "Hábleme sobre la idea de tu proyecto. Estoy listo para ayudarte a hacer realidad tu proyecto digital. ¡Hablemos hoy mismo!",
+    "subtitle": "Ponte en contacto",
+
+    "inputs": [
+      {
+        "type": "text",
+        "name": "name",
+        "id": "name",
+        "label": "Nombre",
+        "placeholder": "Sebastian Perez"
+      },
+      {
+        "type": "text",
+        "name": "email",
+        "id": "email",
+        "label": "Correo electrónico",
+        "placeholder": "example@gmail.com"
+      }
+    ],
+
+    "textarea": {
+      "label": "Cuentame el motivo de tu mensaje.",
+      "placeholder": "Tu mensaje..."
+    },
+
+    "buttonLabel": {
+      "submit": "Enviar",
+      "cancel": "Cancelar"
+    }
+  },
+
+  "footer": {
+    "title": "Únete a la revolución digital para ",
+    "strong": "potenciar tu negocio",
+    "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
+    "action": "Contáctame!",
+    "slogan": "Convierte tu visión en una experiencia digital excepcional. Conectemos!",
+    "content": [
+      {
+        "id": 1,
+        "title": "Ubicación",
+        "description": "Argentina,Buenos Aires"
+      },
+      {
+        "id": 2,
+        "title": "Correo electrónico",
+        "description": "sebastian.perez.jobs@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Teléfono",
+        "description": "+54 1132830604"
+      }
+    ]
+  }
+}

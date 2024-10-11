@@ -5,7 +5,7 @@ import PophoverCvDownload from './PophoverCvDownload';
 
 const Hero = () => {
   return (
-    <section id="hero-section" className="relative bg-white dark:bg-dark-main row-center  h-screen overflow-hidden gap-32">
+    <section id="hero-section" className="w-full relative bg-white dark:bg-dark-main row-center  h-screen overflow-hidden gap-32 px-14">
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
         {/* <span className="paragraph text-base">Hola! mi nombre es Seba</span> */}

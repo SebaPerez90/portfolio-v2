@@ -1,0 +1,96 @@
+{
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contact me",
+        "ariaLabel": "contact me",
+        "href": ""
+      },
+      {
+        "id": 2,
+        "label": "Experience",
+        "ariaLabel": "pricing plans",
+        "href": ""
+      },
+      {
+        "id": 3,
+        "label": "Projects",
+        "ariaLabel": "frequently asked questions",
+        "href": ""
+      }
+    ]
+  },
+
+  "toaster": {
+    "contact": {
+      "toaster": {
+        "loading": "Sending...",
+        "success": "Message sent!",
+        "error": "An error occurred"
+      }
+    },
+    "preferences": {
+      "lang": "Idioma cambiado",
+      "theme": "Theme changed"
+    }
+  },
+
+  "contact-form": {
+    "title": "Join the digital expansion today",
+    "description": "Tell me about your project idea. I'm ready to help you bring your digital project to life. Let's talk today!",
+    "subtitle": "Get in touch",
+
+    "inputs": [
+      {
+        "type": "text",
+        "name": "name",
+        "id": "name",
+        "label": "Name",
+        "placeholder": "Sebastian Perez"
+      },
+      {
+        "type": "text",
+        "name": "email",
+        "id": "email",
+        "label": "Email",
+        "placeholder": "example@gmail.com"
+      }
+    ],
+
+    "textarea": {
+      "label": "Tell me the reason for your message.",
+      "placeholder": "Your message..."
+    },
+
+    "buttonLabel": {
+      "submit": "Send",
+      "cancel": "Cancel"
+    }
+  },
+
+  "footer": {
+    "title": "Join the digital revolution to ",
+    "strong": "empower your business",
+    "description": "No matter your industry, improving your digital presence is just a click away. I can help you achieve your goals.",
+    "action": "Contact me!",
+    "slogan": "Turn your vision into an exceptional digital experience. Let's connect!",
+    "content": [
+      {
+        "id": 1,
+        "title": "Location",
+        "description": "Argentina, Buenos Aires"
+      },
+      {
+        "id": 2,
+        "title": "Email",
+        "description": "sebastian.perez.jobs@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Phone",
+        "description": "+54 1132830604"
+      }
+    ]
+  }
+}
