@@ -22,6 +22,50 @@
     ]
   },
 
+  "skill-set": {
+    "frontend": {
+      "label": "Frontend",
+      "content": [
+        "HTML",
+        "CSS",
+        "React.js",
+        "Tailwind CSS",
+        "Javascript",
+        "Sass",
+        "Next.js",
+        "Figma",
+        "TypeScript"
+      ]
+    },
+    "backend": {
+      "label": "Backend",
+      "content": [
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Git",
+        "Github",
+        "NestJS",
+        "Docker",
+        "TypeORM"
+      ]
+    },
+    "soft-skills": {
+      "label": "Habilidades blandas",
+      "content": [
+        "SCRUM agile",
+        "Jugador de equipo",
+        "Autogestión",
+        "Creatividad",
+        "Adaptabilidad",
+        "Jira",
+        "Mentalidad de crecimiento",
+        "Resolución de problemas"
+      ]
+    }
+  },
+
   "toaster": {
     "contact": {
       "loading": "Enviando...",

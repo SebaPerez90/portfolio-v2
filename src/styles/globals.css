@@ -109,7 +109,6 @@
 		scroll-behavior: smooth;
 		box-sizing: border-box;
 		font: inherit;
-		font-size: calc(9px + 0.5vw);
 		transition: background ease-out 400ms;
 		font-family: "Poppins", sans-serif;
 

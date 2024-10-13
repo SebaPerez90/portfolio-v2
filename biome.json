@@ -22,6 +22,9 @@
       "complexity": {
         "noUselessTernary": "off"
       },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
       "recommended": true,
       "style": {
         "useSelfClosingElements": "off",

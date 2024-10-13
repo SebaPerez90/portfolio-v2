@@ -6,7 +6,7 @@
 		transform: translate(2em, 16em) scale(4.5);
 	}
 	70% {
-		transform: translate(-10em, 7em) scale(2);
+		transform: translate(2em, 7em) scale(2);
 	}
 	100% {
 		transform: translate(-6em, 11em) scale(3);
@@ -42,3 +42,9 @@
 		transform: translate(-55em, 5em) scale(2);
 	}
 }
+
+@keyframes disc-shining {
+    to {
+      box-shadow: 0 0 0 1px #3cc259bb;
+    }
+  }

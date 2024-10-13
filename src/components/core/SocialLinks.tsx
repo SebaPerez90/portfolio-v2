@@ -41,7 +41,7 @@ const SocialLinks = () => {
   }, [animate, isInView, scope])
 
   return (
-    <nav className='mt-5'>
+    <nav>
       <ul
         ref={scope}
         className='row-center gap-1'>

@@ -22,6 +22,51 @@
     ]
   },
 
+  "skill-set": {
+    "frontend": {
+      "label": "Frontend",
+      "content": [
+        "HTML",
+        "CSS",
+        "React.js",
+        "Tailwind CSS",
+        "Javascript",
+        "Sass",
+        "Next.js",
+        "Figma",
+        "TypeScript"
+      ]
+    },
+    "backend": {
+      "label": "Backend",
+      "content": [
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Git",
+        "Github",
+        "NestJS",
+        "Docker",
+        "ORMs",
+        "ODMs"
+      ]
+    },
+    "soft-skills": {
+      "label": "Soft Skills",
+      "content": [
+        "SCRUM agile",
+        "Team player",
+        "Self-management",
+        "Creativity",
+        "Adaptability",
+        "Jira",
+        "Growth mindset",
+        "Problem-solving"
+      ]
+    }
+  },
+
   "toaster": {
     "contact": {
       "toaster": {

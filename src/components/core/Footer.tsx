@@ -16,7 +16,7 @@ const Footer = () => {
   const contactData = t('footer.content', { returnObjects: true });
 
   return (
-    <footer id="footer-section" className="col-center">
+    <footer id="footer-section" className="col-center w-full pt-6">
       <ul className="flex flex-col items-start gap-10 pl-16 sm:flex sm:items-center sm:flex-row sm:gap-20 sm:pl-0 my-10">
         {(contactData as Array<LocaleData>).map((element) => (
           <li key={element.id} className="flex items-center gap-1">

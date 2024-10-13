@@ -21,11 +21,11 @@ const ContactMeForm = () => {
       id="contact-form"
       name="contact-form"
       onSubmit={formik.handleSubmit}
-      className="col-center bg-white w-full gap-10 md:gap-5 max-w-lg p-10"
+      className="col-center bg-white w-full h-full gap-10 md:gap-5 max-w-lg p-10"
     >
-      <h2 className="text-2xl font-semibold text-gray-800 dark:text-slate-50">{t('contact-form.subtitle')}</h2>
+      <h2 className='text-lg font-medium'>Contáctame!</h2>
       {(contactFormData as Array<LocaleProjectRequestForm>).map((item) => (
-        <Label key={item.id} className="flex flex-col text-base sm:text-sm gap-1 w-[90%] relative mt-2" htmlFor={item.name}>
+        <Label key={item.id} className="flex flex-col text-dark-soft font-semibold text-base sm:text-sm gap-1 w-[90%] relative mt-2" htmlFor={item.name}>
           {item.label}
           <Input
             id={item.id}
@@ -45,7 +45,7 @@ const ContactMeForm = () => {
           )}
         </Label>
       ))}
-      <Label htmlFor="message" className="flex flex-col gap-1 text-base sm:text-sm relative w-[90%] mt-2">
+      <Label htmlFor="message" className="flex flex-col text-dark-soft font-semibold gap-1 text-base sm:text-sm relative w-[90%] mt-2">
         {t('contact-form.textarea.label')}
         <Textarea
           id="message"
@@ -58,8 +58,8 @@ const ContactMeForm = () => {
       <div className="w-[90%] row-center">
         <Button
           type="button"
-          variant={"secondary"}
-          size={"lg"}
+          variant={'secondary'}
+          size={'lg'}
           onClick={() => formik.resetForm()}
           className="w-full dark:text-purple-400 border-purple-400 asdasd dark:hover:text-purple-300 hover:duration-200 duration-200 dark:hover:bg-transparent dark:hover:border-purple-300"
         >
@@ -67,12 +67,10 @@ const ContactMeForm = () => {
         </Button>
         <Button
           type="submit"
-          variant={"primary"}
-          size={"lg"}
+          variant={'primary'}
+          size={'lg'}
           loading={loading ? true : false}
-          className={`${
-            loading && 'text-transparent'
-          } w-full`}
+          className={`${loading && 'text-transparent'} w-full`}
         >
           {t('contact-form.buttonLabel.submit')}
         </Button>

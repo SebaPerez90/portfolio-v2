@@ -17,6 +17,14 @@ export const theme = {
         black: '#333333e3',
         blue: '#4d4dffd9',
       },
+      dark: {
+        soft: '#2f2f2f',
+        neutral: '#212121',
+        deep: '#171717',
+      },
+      ligth: {
+        soft: '#f3f3f3',
+      },
       border: 'hsl(var(--border))',
       input: 'hsl(var(--input))',
       ring: 'hsl(var(--ring))',
@@ -50,6 +58,11 @@ export const theme = {
         DEFAULT: 'hsl(var(--card))',
         foreground: 'hsl(var(--card-foreground))',
       },
+    },
+    boxShadow: {
+      top: '0px -3px 15px 0px rgba(0, 0, 0, 0.3)',
+      neutral: '0px 0px 30px 0px rgba(0, 0, 0, 0.1)',
+      bottom: '0px 3px 15px 0px rgba(0, 0, 0, 0.3)',
     },
     borderRadius: {
       lg: 'var(--radius)',
