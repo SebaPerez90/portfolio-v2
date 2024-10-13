@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="col-center gap-24">
+      <main className="col-center gap-0">
         <Hero />
         <SkillsContainer />
         <FormContainer />

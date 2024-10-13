@@ -21,7 +21,7 @@ const SkillsContainer = () => {
   ];
 
   return (
-    <section id="skills-section" className="flex flex-col items-center gap-16 py-32">
+    <section id="skills-section" className="bg-ligth-soft flex flex-col items-center gap-16 py-32 w-full">
       <h1 className="dark:text-slate-50 text-4xl font-bold text-custom-black">Habilidades.</h1>
       <motion.div className="w-full flex justify-center px-8 flex-wrap gap-20">
         {skillsData.map((skill, index) => (
