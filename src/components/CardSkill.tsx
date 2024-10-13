@@ -8,15 +8,9 @@ export interface CardSkillProps {
 const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
   return (
     <motion.div
-      transition={{
-        bounce: 0.45,
-        damping: 30,
-        duration: 0.6,
-        staggerChildren: 0.6,
-        type: 'spring',
-      }}
-      initial={{ x: -100, opacity: 0 }}
-      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ delay: 0.5, duration: 0.3 }}
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
       className="shadow-2xl rounded-lg w-[25em] shadow-purple-500/20 border col-center py-5"
     >
@@ -24,8 +18,8 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
       <ul className="flex flex-col flex-wrap h-[11.5em] gap-3">
         {skillsContent.map((element, index: number) => (
           <motion.li
-            transition={{ delay: 0.2, staggerChildren: 0.6 }}
-            initial={{ y: 50, opacity: 0 }}
+            transition={{ delay: 0.5, staggerChildren: 0.8 }}
+            initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             key={index}

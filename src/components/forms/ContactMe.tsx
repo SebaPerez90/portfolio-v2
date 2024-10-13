@@ -21,7 +21,7 @@ const ContactMeForm = () => {
       id="contact-form"
       name="contact-form"
       onSubmit={formik.handleSubmit}
-      className="col-center bg-white w-full h-full gap-10 md:gap-5 max-w-lg p-10"
+      className="col-center bg-white w-full h-full gap-10 md:gap-5 xl:max-w-lg p-10"
     >
       <h2 className='text-lg font-medium'>Contáctame!</h2>
       {(contactFormData as Array<LocaleProjectRequestForm>).map((item) => (

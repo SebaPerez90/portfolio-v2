@@ -3,8 +3,9 @@ import contact from '@/assets/svg/contact.svg';
 
 const FormContainer = () => {
   return (
-    <section className="w-full col-center bg-ligth-soft py-36">
-      <div className="row-center gap-0 h-[35em] shadow-2xl rounded-xl overflow-hidden">
+    <section className="w-full col-center bg-white py-12">
+      <div className="flex-col xl:flex-row flex justify-center items-center gap-0 h-auto xl:h-[35em] xl:w-auto shadow-2xl rounded-lg overflow-hidden">
+
         <div className="h-full col-center justify-around gap-12 px-7 py-10 bg-gradient-to-t from-pink-500 to-purple-900 w-[45em]">
           <div className="ml-6 flex flex-col gap-4">
             <h2 className="text-4xl text-white font-bold">
@@ -28,6 +29,7 @@ const FormContainer = () => {
             />
           </figure>
         </div>
+
         <ContactMeForm />
       </div>
     </section>
