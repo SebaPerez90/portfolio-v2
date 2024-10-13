@@ -12,7 +12,7 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
-      className="shadow-2xl rounded-lg w-[25em] bg-white shadow-purple-500/20 border col-center py-5 px-3 justify-center"
+      className="shadow-2xl rounded-lg w-[25em] bg-white shadow-purple-500/20 border col-center py-6 px-3 justify-center"
     >
       <h3 className="title text-center text-custom-black">{title}</h3>
       <ul className="flex items-center gap-3 w-full flex-wrap justify-center">
@@ -23,9 +23,9 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             key={index}
-            // relative before:absolute before:left-[8px] before:top-[10px] before:w-[6px] before:h-[6px] before:bg-green-500 before:rounded-full before:animate-[disc-shining_800ms_ease-out_alternate-reverse_infinite]
-            className="text-xs border font-semibold border-dark-soft/30 py-1 px-4 rounded-lg w-max bg-ligth-soft text-custom-black "
+            className="text-base lg:text-xs border font-semibold border-dark-soft/30 py-2 pl-2 pr-3 rounded-lg w-max bg-ligth-soft text-custom-black flex items-center gap-[2px]"
           >
+            <span className="w-[6px] h-[6px] rounded-[50%] bg-green-500 [disc-shining_800ms_ease-out_alternate-reverse_infinite]" />
             {element}
           </motion.li>
         ))}
