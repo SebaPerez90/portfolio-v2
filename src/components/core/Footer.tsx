@@ -16,20 +16,20 @@ const Footer = () => {
   const contactData = t('footer.content', { returnObjects: true });
 
   return (
-    <footer id="footer-section" className="col-center w-full pt-20 xl:bg-white bg-white md:bg-ligth-soft z-10">
-      <ul className="flex-col items-start  flex lg:flex-row lg:items-center justify-center gap-12 lg:gap-32 my-10 lg:pl-0 min-[500px]-pl-28 pl-16">
+    <footer id="footer-section" className="col-center w-full pt-6">
+      <ul className="flex flex-col items-start gap-10 pl-16 sm:flex sm:items-center sm:flex-row sm:gap-20 sm:pl-0 my-10">
         {(contactData as Array<LocaleData>).map((element) => (
           <li key={element.id} className="flex items-center gap-1">
             {iconDictionary[element.id]}
             <div className="flex flex-col">
-              <span className="font-bold text-purple-500">{element.title}</span>
-              <span className="font-medium min-[500px]:text-sm text-xs">{element.description}</span>
+              <span className="font-bold">{element.title}</span>
+              <span className="font-medium text-sm">{element.description}</span>
             </div>
           </li>
         ))}
       </ul>
-      <hr className="h-[2px] bg-gray-300 w-[70%]" />
       <SocialLinks />
+      <hr className="h-[2px] bg-gray-300 w-[70%]" />
       <span className="w-max font-medium text-sm my-2">© 2024 Portfolio | Sebastian Perez</span>
     </footer>
   );
