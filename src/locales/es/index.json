@@ -1,0 +1,182 @@
+{
+  "hero": {
+    "strong": "Hola! soy Sebastian, desarrollador con +2 años de experiencia en el area de de sistemas.",
+    "description": "Mi enfoque va más allá de escribir código; se trata de convertir ideas en aplicaciones rápidas y efectivas, donde cada detalle está pensado para crear experiencias digitales únicas, para que los usuarios disfruten de la experiencia desde el primer click.",
+    "CTA1": "Conocé más sobre mi",
+    "CTA2": "Descargar cv"
+  },
+
+  "header": {
+    "content": [
+      {
+        "id": 1,
+        "label": "Contáctame",
+        "ariaLabel": "contactame",
+        "href": "#contact-section"
+      },
+      {
+        "id": 2,
+        "label": "Experiencia",
+        "ariaLabel": "precio de los planes",
+        "href": "#experience-section"
+      },
+      {
+        "id": 3,
+        "label": "Habilidades",
+        "ariaLabel": "preguntas frecuentes",
+        "href": "#skills-section"
+      }
+    ]
+  },
+
+  "experience": {
+    "title": "Experiencia.",
+    "freelance": {
+      "timeLine": "Octubre 2024",
+      "title": "Desarrollador Freelance",
+      "dates": "10/2024 - presente",
+      "content": [
+        "Desarrollo de landing pages para reflejar la escencia de tu negocio en una web.",
+        "Desarrollo de tiendas online (e-comerce) a medida.",
+        "Desarrollo de interfaces de usuario utilizando React para crear experiencias atractivas y fluidas.",
+        "Diseño e implementación de aplicaciones web escalables, optimizando el rendimiento y la accesibilidad.",
+        "Desarrollo de interfaces de usuario utilizando React.js y todo su ecosistema.",
+        "Integración de APIs y servicios backend para garantizar una interacción fluida entre las capas de la aplicación."
+      ]
+    },
+    "gravitad": {
+      "timeLine": "Agosto 2024",
+      "title": "Gravitad - Desarrollador Frontend",
+      "company": "Gravitad",
+      "dates": "07/2024 - presente",
+      "content": [
+        "Desarrollo de interfaces de usuario utilizando React.js con Vite.",
+        "Desarrollo de aplicaciones web.",
+        "Desarrollo de aplicaciones blockchain.",
+        "Trabajar en conjunto con el departamente de UX/UI para hacer una fiel réplica del diseño.",
+        "Desarrollo de interfaces de usuario utilizando React.js y todo su ecosistema.",
+        "Integraciones de conexiones con el departamento de backend."
+      ]
+    },
+    "cabaña": {
+      "timeLine": "Enero 2014",
+      "title": "Cabaña Las Lilas - Mozo de salón",
+      "dates": "01/2014 - 01/2015",
+      "content": [
+        "Mise an place para el servicio.",
+        "Atención y servicio al cliente.",
+        "Manejo de personal del salón."
+      ]
+    }
+  },
+
+  "skill-set": {
+    "frontend": {
+      "label": "Frontend",
+      "content": [
+        "HTML",
+        "CSS",
+        "React.js",
+        "Tailwind CSS",
+        "Javascript",
+        "Sass",
+        "Next.js",
+        "Figma",
+        "TypeScript"
+      ]
+    },
+    "backend": {
+      "label": "Backend",
+      "content": [
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Git",
+        "Github",
+        "NestJS",
+        "Docker",
+        "TypeORM"
+      ]
+    },
+    "soft-skills": {
+      "label": "Habilidades blandas",
+      "content": [
+        "SCRUM agile",
+        "Jugador de equipo",
+        "Autogestión",
+        "Creatividad",
+        "Adaptabilidad",
+        "Jira",
+        "Mentalidad de crecimiento",
+        "Resolución de problemas"
+      ]
+    }
+  },
+
+  "toaster": {
+    "contact": {
+      "loading": "Enviando...",
+      "success": "Mensaje enviado!",
+      "error": "Ocurrió un error"
+    },
+    "preferences": {
+      "lang": "Language changed",
+      "theme": "Tema cambiado"
+    }
+  },
+
+  "contact-form": {
+    "slogan1": "Todo gran proyecto",
+    "slogan2": "Comienza con un",
+    "slogan3": "plan",
+    "description": "Enviame un mensaje y en la brevedad voy comunicarme contigo para descubrir como podemos colaborar juntos.",
+    "subtitle": "Contáctame!",
+    "inputs": [
+      {
+        "type": "text",
+        "name": "name",
+        "id": "name",
+        "label": "Nombre",
+        "placeholder": "Sebastian Perez"
+      },
+      {
+        "type": "text",
+        "name": "email",
+        "id": "email",
+        "label": "Correo electrónico",
+        "placeholder": "example@gmail.com"
+      }
+    ],
+
+    "textarea": {
+      "label": "Cuentame el motivo de tu mensaje.",
+      "placeholder": "Tu mensaje..."
+    },
+
+    "buttonLabel": {
+      "submit": "Enviar",
+      "cancel": "Cancelar"
+    }
+  },
+
+  "footer": {
+    "content": [
+      {
+        "id": 1,
+        "title": "Ubicación",
+        "description": "Argentina,Buenos Aires"
+      },
+      {
+        "id": 2,
+        "title": "Correo electrónico",
+        "description": "sebastian.perez.jobs@gmail.com"
+      },
+      {
+        "id": 3,
+        "title": "Teléfono",
+        "description": "+54 1132830604"
+      }
+    ]
+  }
+}

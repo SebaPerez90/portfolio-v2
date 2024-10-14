@@ -19,6 +19,12 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "complexity": {
+        "noUselessTernary": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
       "recommended": true,
       "style": {
         "useSelfClosingElements": "off",
@@ -35,7 +41,10 @@
       "lineWidth": 130,
       "arrowParentheses": "always",
       "bracketSpacing": true,
-      "jsxQuoteStyle": "double"
+      "jsxQuoteStyle": "double",
+      "indentWidth": 2,
+      "indentStyle": "space",
+      "quoteProperties": "asNeeded"
     }
   }
 }
