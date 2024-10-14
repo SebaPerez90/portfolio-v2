@@ -9,7 +9,7 @@ import { useDynamicFormik } from '@/hooks/useFormik';
 
 const ContactMeForm = () => {
   const { t } = useTranslation();
-  const { formik, loading } = useDynamicFormik(['topic', 'name', 'email', 'message'], ContactSchema);
+  const { formik, loading } = useDynamicFormik(['name', 'email', 'message'], ContactSchema);
   type FormFieldName = keyof typeof formik.values;
 
   const contactFormData = t('contact-form.inputs', {
@@ -21,25 +21,27 @@ const ContactMeForm = () => {
       id="contact-form"
       name="contact-form"
       onSubmit={formik.handleSubmit}
-      className="col-center bg-white w-full h-full gap-5 xl:max-w-lg *:
-      p-10
-      "
-      // pb-20 md:pb-0 p-3 lg:
+      className="z-40 col-center bg-white backdrop-blur w-full h-full gap-5 xl:max-w-lg p-10"
     >
-      <h2 className='text-lg font-medium'>Contáctame!</h2>
+      <h2 className="text-xl font-bold text-custom-black">{t('contact-form.subtitle')}</h2>
       {(contactFormData as Array<LocaleProjectRequestForm>).map((item) => (
-        <Label key={item.id} className="flex flex-col text-dark-soft font-semibold text-base sm:text-sm gap-1 w-[90%] relative mt-2" htmlFor={item.name}>
+        <Label
+          key={item.id}
+          className="flex flex-col text-dark-soft font-semibold text-base sm:text-sm gap-1 w-[90%] relative mt-2"
+          htmlFor={item.name}
+        >
           {item.label}
           <Input
             id={item.id}
             autoComplete="on"
             type={item.type}
             name={item.name}
+            style={item.name ? { textTransform: 'capitalize' } : {}}
             placeholder={item.placeholder}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values[item.name as FormFieldName]}
-            className="bg-white text-sm py-6 sm:py-4 dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500"
+            className="bg-white text-sm py-6 sm:py-4 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:opacity-70 placeholder:italic placeholder-gray-500"
           />
           {formik.touched[item.name as FormFieldName] && (
             <span className="text-red-600 text-base md:text-xs absolute md:-bottom-5 -bottom-6 left-2">
@@ -48,13 +50,16 @@ const ContactMeForm = () => {
           )}
         </Label>
       ))}
-      <Label htmlFor="message" className="flex flex-col text-dark-soft font-semibold gap-1 text-base sm:text-sm relative w-[90%] mt-2">
+      <Label
+        htmlFor="message"
+        className="flex flex-col text-dark-soft font-semibold gap-1 text-base sm:text-sm relative w-[90%] mt-2"
+      >
         {t('contact-form.textarea.label')}
         <Textarea
           id="message"
           placeholder={t('contact-form.textarea.placeholder')}
           onChange={formik.handleChange}
-          className="bg-white text-sm dark:bg-dark-neutral border border-purple-400 focus:border-purple-600 placeholder:opacity-70 placeholder:italic placeholder-gray-500 min-h-[10em]"
+          className="bg-white text-sm dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:opacity-70 placeholder:italic placeholder-gray-500 min-h-[12em]"
         />
       </Label>
 

@@ -11,7 +11,7 @@ export function Experience() {
 
   const data = [
     {
-      title: 'Octubre 2024',
+      title: t("experience.freelance.timeLine"),
       content: (
         <motion.div
           transition={{ duration: 0.3 }}
@@ -19,11 +19,11 @@ export function Experience() {
           whileInView={{ opacity: 1, scale: 1 }}
           className="col-center items-start gap-2"
         >
-          <h2 className="title text-blue-500">{t('experience.freelance.title')}</h2>
-          <span className="font-semibold text-custom-black/70">{t('experience.freelance.dates')}</span>
+          <h2 className="title text-blue-500 text-3xl lg:text-2xl">{t('experience.freelance.title')}</h2>
+          <span className="text-lg lg:text-base font-semibold text-custom-black/70">{t('experience.freelance.dates')}</span>
           <ul className="ml-5 list-disc marker:text-blue-500 marker:text-lg flex flex-col gap-2 mt-8">
             {(freelanceResponsabilities as Array<string>).map((element, index) => (
-              <li className="text-sm" key={index}>
+              <li className="text-lg lg:text-sm" key={index}>
                 {element}
               </li>
             ))}
@@ -32,7 +32,7 @@ export function Experience() {
       ),
     },
     {
-      title: 'Agosto 2024',
+      title: t("experience.gravitad.timeLine"),
       content: (
         <motion.div
           transition={{ duration: 0.3, delay: 0.3 }}
@@ -40,11 +40,11 @@ export function Experience() {
           whileInView={{ opacity: 1, scale: 1 }}
           className="col-center items-start gap-2"
         >
-          <h2 className="title text-blue-500">{t('experience.gravitad.title')}</h2>
-          <span className="font-semibold text-custom-black">{t('experience.gravitad.dates')}</span>
-          <ul className="ml-5 list-disc marker:text-blue-500 marker:text-lg text-sm flex flex-col gap-2 mt-8">
+          <h2 className="title text-blue-500 text-3xl lg:text-2xl">{t('experience.gravitad.title')}</h2>
+          <span className="text-lg lg:text-base font-semibold text-custom-black">{t('experience.gravitad.dates')}</span>
+          <ul className="ml-5 list-disc marker:text-blue-500 marker:text-lg flex flex-col gap-2 mt-8">
             {(gravitadResponsabilities as Array<string>).map((element, index) => (
-              <li className="text-sm" key={index}>
+              <li className="text-lg lg:text-sm" key={index}>
                 {element}
               </li>
             ))}
@@ -63,7 +63,7 @@ export function Experience() {
       ),
     },
     {
-      title: 'Enero 2014',
+      title: t("experience.cabaña.timeLine"),
       content: (
         <motion.div
           transition={{ duration: 0.3, delay: 0.3 }}
@@ -71,11 +71,11 @@ export function Experience() {
           whileInView={{ opacity: 1, scale: 1 }}
           className="col-center items-start gap-2"
         >
-          <h2 className="title text-blue-500 lg:w-max">{t('experience.cabaña.title')}</h2>
-          <span className="font-semibold text-custom-black">{t('experience.cabaña.dates')}</span>
-          <ul className="ml-5 list-disc marker:text-blue-500 marker:text-lg text-sm flex flex-col gap-2 mt-8">
+          <h2 className="title text-blue-500 text-3xl lg:text-2xl lg:w-max">{t('experience.cabaña.title')}</h2>
+          <span className="text-lg lg:text-base font-semibold text-custom-black">{t('experience.cabaña.dates')}</span>
+          <ul className="ml-5 list-disc marker:text-blue-500 marker:text-lg flex flex-col gap-2 mt-8">
             {(waiterResponsabilities as Array<string>).map((element, index) => (
-              <li className="text-sm" key={index}>
+              <li className="text-lg lg:text-sm" key={index}>
                 {element}
               </li>
             ))}

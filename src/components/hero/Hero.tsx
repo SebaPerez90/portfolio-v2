@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="w-full relative bg-white dark:bg-dark-main row-center  h-screen overflow-hidden gap-32 px-14"
+      className="w-full relative bg-white dark:bg-dark-main row-center h-screen overflow-hidden lg:gap-32 px-6 md:px-14"
     >
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
@@ -29,7 +29,9 @@ const Hero = () => {
 
         <div className="z-50 row-center mt-6">
           <Button size={'lg'} variant={'primary'}>
-            {t('hero.CTA1')}
+            <a href="https://codevibes.vercel.app/" target="_blank" rel="noopener noreferrer">
+              {t('hero.CTA1')}
+            </a>
           </Button>
           <PophoverCvDownload label={t('hero.CTA2')} />
         </div>

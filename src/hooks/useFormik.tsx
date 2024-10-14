@@ -40,9 +40,9 @@ export const useDynamicFormik = (fields: string[], schema: AnySchema) => {
         .promise(
           sendForm(),
           {
-            loading: t('contactMe.toaster.loading'),
-            success: t('contactMe.toaster.success'),
-            error: t('contactMe.toaster.error'),
+            loading: t('toaster.contact.loading'),
+            success: t('toaster.contact.success'),
+            error: t('toaster.contact.error'),
           },
           { style: { fontWeight: 600 } },
         )

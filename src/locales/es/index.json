@@ -127,10 +127,11 @@
   },
 
   "contact-form": {
-    "title": "Unete hoy a la expansión digital",
-    "description": "Hábleme sobre la idea de tu proyecto. Estoy listo para ayudarte a hacer realidad tu proyecto digital. ¡Hablemos hoy mismo!",
-    "subtitle": "Ponte en contacto",
-
+    "slogan1": "Todo gran proyecto",
+    "slogan2": "Comienza con un",
+    "slogan3": "plan",
+    "description": "Enviame un mensaje y en la brevedad voy comunicarme contigo para descubrir como podemos colaborar juntos.",
+    "subtitle": "Contáctame!",
     "inputs": [
       {
         "type": "text",
@@ -160,11 +161,6 @@
   },
 
   "footer": {
-    "title": "Únete a la revolución digital para ",
-    "strong": "potenciar tu negocio",
-    "description": "No importa tu rubro, mejorar tu presencia digital está a un click de distancia. Te ayudo a cumplir tus objetivos.",
-    "action": "Contáctame!",
-    "slogan": "Convierte tu visión en una experiencia digital excepcional. Conectemos!",
     "content": [
       {
         "id": 1,

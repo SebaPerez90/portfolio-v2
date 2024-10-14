@@ -126,3 +126,10 @@
 		}
 	}
 }
+
+
+@media (height < 600px) {
+	#hero-section {
+		min-height: 130vh;
+	}
+}
