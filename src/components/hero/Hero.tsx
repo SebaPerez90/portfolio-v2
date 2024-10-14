@@ -9,13 +9,13 @@ const Hero = () => {
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
         {/* <span className="paragraph text-base">Hola! mi nombre es Seba</span> */}
-        <h1 className="text-7xl xl:text-8xl dark:text-slate-50 text-custom-black font-black">
-          <strong className="dark:text-dark-sky text-7xl xl:text-8xl text-custom-blue">Front</strong>
+        <h1 className="text-7xl dark:text-slate-50 text-custom-black font-black">
+          <strong className="dark:text-dark-sky text-7xl text-custom-blue">Front</strong>
           end
           <br />
           Developer
         </h1>
-        <p className="paragraph text-base">
+        <p className="paragraph">
           <strong>3 años de experiencia en el area de desarrollo de software.</strong>
           <br />
           <br />

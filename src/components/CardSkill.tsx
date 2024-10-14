@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 export interface CardSkillProps {
   title: string;
   skillsContent: string[];
+  delayAnimation: number;
 }
 
-const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
+const CardSkill = ({ title, skillsContent, delayAnimation }: CardSkillProps) => {
   return (
     <motion.div
-      transition={{ delay: 0.5, duration: 0.3 }}
+      transition={{ delay: delayAnimation, duration: 0.4 }}
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
@@ -21,7 +22,6 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
             transition={{ delay: 0.5, staggerChildren: 0.8 }}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
             key={index}
             className="text-base lg:text-xs border font-semibold border-dark-soft/30 py-2 pl-2 pr-3 rounded-lg w-max bg-ligth-soft text-custom-black flex items-center gap-[2px]"
           >

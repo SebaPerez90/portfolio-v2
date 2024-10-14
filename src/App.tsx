@@ -4,6 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import Footer from '@/components/core/Footer';
 import FormContainer from '@/components/FormContainer';
 import SkillsContainer from './components/SkillsContainer';
+import { Experience } from './components/Experience';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <main className="col-center gap-0">
         <Hero />
+        <Experience />
         <SkillsContainer />
         <FormContainer />
       </main>

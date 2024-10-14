@@ -25,7 +25,12 @@ const SkillsContainer = () => {
       <h1 className="dark:text-slate-50 text-4xl font-bold text-custom-black">Habilidades.</h1>
       <motion.div className="w-full flex justify-center px-8 flex-wrap gap-20">
         {skillsData.map((skill, index) => (
-          <CardSkill key={index} title={skill.title} skillsContent={skill.skillsContent as Array<string>} />
+          <CardSkill
+            key={index}
+            delayAnimation={index * 0.2}
+            title={skill.title}
+            skillsContent={skill.skillsContent as Array<string>}
+          />
         ))}
       </motion.div>
     </section>

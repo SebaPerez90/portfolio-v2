@@ -82,7 +82,7 @@
 	}
 
 	.paragraph {
-		@apply text-xl text-custom-black font-medium dark:text-slate-300;
+		@apply text-base text-custom-black font-medium dark:text-slate-300;
 	}
 
 	.test {
