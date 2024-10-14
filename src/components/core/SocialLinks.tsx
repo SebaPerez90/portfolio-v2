@@ -44,7 +44,7 @@ const SocialLinks = () => {
     <nav>
       <ul
         ref={scope}
-        className='row-center gap-1'>
+        className='row-center gap-1 mt-12'>
         {socialLinks.map((link, index) => (
           <motion.li
             transition={{ delay: 2 }}
