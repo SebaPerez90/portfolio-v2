@@ -13,7 +13,7 @@ const PophoverCvDownload = () => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button size={"lg"} variant={"secondary"} className="flex gap-3 items-center">
+        <Button size={"lg"} variant={"secondary"} className="z-50 flex gap-3 items-center">
           Descargar cv
           <MdDownload color='#a855f7' size={25}/>
         </Button>

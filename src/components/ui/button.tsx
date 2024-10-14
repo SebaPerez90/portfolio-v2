@@ -16,7 +16,7 @@ const buttonVariants = cva(
         primary:
           'text-white font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg hover:scale-105 duration-200 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] [height:3.5em] hover:cursor-pointer [transition:300ms]',
         secondary:
-          'text-transparent bg-clip-text font-semibold border border-indigo-500/70 bg-white shadow-lg hover:scale-105 duration-200 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] hover:cursor-pointer [transition:300ms] bg-gradient-to-r from-indigo-500 [height:3.5em] via-purple-500 to-pink-500',
+          'text-transparent bg-clip-text font-semibold border border-indigo-500/70 bg-white shadow-lg hover:scale-105 duration-200 hover:drop-shadow-2xl hover:shadow-[#7dd3fc] hover:cursor-pointer [transition:300ms]  bg-gradient-to-r z-40 from-indigo-500 [height:3.5em] via-purple-500 to-pink-500',
       },
       size: {
         default: 'h-9 px-4 py-2',

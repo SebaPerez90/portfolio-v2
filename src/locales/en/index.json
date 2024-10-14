@@ -22,6 +22,46 @@
     ]
   },
 
+  "experience": {
+    "title": "Experience.",
+    "freelance": {
+      "timeLine": "October 2024",
+      "title": "Freelance Developer",
+      "dates": "10/2024 - present",
+      "content": [
+        "Development of landing pages to reflect the essence of your business on a website.",
+        "Development of custom online stores (e-commerce).",
+        "Development of user interfaces using React to create attractive and smooth experiences.",
+        "Design and implementation of scalable web applications, optimizing performance and accessibility.",
+        "Development of user interfaces using React.js and its entire ecosystem.",
+        "Integration of APIs and backend services to ensure seamless interaction between the layers of the application."
+      ]
+    },
+    "gravitad": {
+      "timeLine": "August 2024",
+      "title": "Gravitad - Frontend Developer",
+      "dates": "07/2024 - present",
+      "content": [
+        "Development of user interfaces using React.js with Vite.",
+        "Development of web applications.",
+        "Development of blockchain applications.",
+        "Collaborating with the UX/UI department to faithfully replicate the design.",
+        "Development of user interfaces using React.js and its entire ecosystem.",
+        "Backend integration connections."
+      ]
+    },
+    "cabaña": {
+      "timeLine": "January 2014",
+      "title": "Cabaña Las Lilas - Waiter",
+      "dates": "01/2014 - 01/2015",
+      "content": [
+        "Mise en place for service.",
+        "Customer service and attention.",
+        "Management of restaurant staff."
+      ]
+    }
+  },
+
   "skill-set": {
     "frontend": {
       "label": "Frontend",
