@@ -43,7 +43,7 @@ const SocialLinks = ({ subtitle }: { subtitle: string }) => {
         <img src={avatar_image} alt="avatar_image" className="size-full object-cover" />
       </figure>
       <nav className="col-center  mt-6">
-        <h2 className="text-2xl font-bold text-custom-black text-center">{subtitle}</h2>
+        <h2 className="text-2xl font-bold text-custom-black dark:text-white text-center">{subtitle}</h2>
         <ul ref={scope} className="row-center gap-1 mt-6a">
           {socialLinks.map((link, index) => (
             <motion.li transition={{ delay: 2 }} initial={{ opacity: 0, y: 100 }} key={index} className="group">

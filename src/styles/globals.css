@@ -135,6 +135,7 @@ body {
 
 	::-webkit-scrollbar-thumb {
 		background-color: #b247ff;
+		/* background-color: #ff910063; */
 		border-radius: 10px;
 	}
 }

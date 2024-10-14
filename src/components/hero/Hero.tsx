@@ -11,12 +11,12 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="w-full relative bg-white dark:bg-dark-main row-center h-screen overflow-hidden lg:gap-32 px-6 md:px-14"
+      className="w-full relative bg-white dark:bg-dark-neutral row-center h-screen overflow-x-hidden lg:gap-32 px-6 md:px-14"
     >
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
         <h1 className="text-7xl xl:text-8xl dark:text-slate-50 text-custom-black font-black">
-          <strong className="dark:text-dark-sky text-7xl xl:text-8xl text-custom-blue">Front</strong>
+          <strong className="dark:text-dark-sky text-7xl xl:text-8xl text-custom-blue dark:text-custom-orange">Front</strong>
           end
           <br />
           Developer

@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="col-center gap-0">
+      <main className="col-center gap-0 bg-white dark:bg-dark-neutral">
         <Hero />
         <Experience />
         <SkillsContainer />

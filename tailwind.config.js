@@ -16,6 +16,7 @@ export const theme = {
       custom: {
         black: '#333333e3',
         blue: '#4d4dffd9',
+        orange: '#ff9000',
       },
       dark: {
         soft: '#2f2f2f',

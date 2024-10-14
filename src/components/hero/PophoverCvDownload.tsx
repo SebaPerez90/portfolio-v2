@@ -13,9 +13,9 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button size={'lg'} variant={'secondary'} className="z-50 flex gap-3 items-center">
+        <Button size={'lg'} variant={'secondary'} className="z-50 flex gap-3 text-purple-500 dark:text-custom-orange items-center">
           {label}
-          <MdDownload color="#a855f7" size={25} />
+          <MdDownload size={25} />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-max flex flex-col gap-1 mt-2 p-1">

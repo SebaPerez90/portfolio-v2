@@ -20,7 +20,7 @@ const FormContainer = () => {
       {/* custom shape */}
 
       <div className="flex-col md:flex-row flex justify-center items-center gap-0 h-auto xl:h-[35em] xl:shadow-xl xl:rounded-lg overflow-hidden border-none xl:border">
-        <div className="z-40 h-full col-center justify-around gap-12 px-7 py-10 bg-gradient-to-t from-pink-500 to-purple-900 w-full md:w-[70%] xl:w-[45em]">
+        <div className="z-40 h-full col-center justify-around gap-12 px-7 py-10 bg-gradient-to-t from-pink-500 dark:from-[#ff9000] dark:to-[#55350c] to-purple-900 w-full md:w-[70%] xl:w-[45em]">
           <div className="ml-6 flex flex-col gap-4">
             <h2 className="text-5xl md:text-2xl lg:text-4xl text-white font-bold">
               {t('contact-form.slogan1')}
@@ -30,7 +30,7 @@ const FormContainer = () => {
             </h2>
             <p className="text-2xl md:text-sm lg:text-base text-slate-100">{t('contact-form.description')}</p>
           </div>
-          <figure className="md:w-[22em] w-[25em] h-auto">
+          <figure className="md:w-[23em] w-[25em] h-auto">
             <img
               loading="lazy"
               src={contact}
