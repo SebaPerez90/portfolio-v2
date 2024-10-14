@@ -57,7 +57,7 @@ const SocialLinks = ({ subtitle }: { subtitle: string }) => {
                 <span className={`${link.styles} hover:duration-150 duration-150 hover:opacity-80 p-3 text-white rounded-full`}>
                   {link.icon}
                 </span>
-                <span className="text-xs font-medium opacity-0 group-hover:opacity-100 row-center gap-1 transition-opacity duration-150">
+                <span className="text-xs font-medium opacity-0 group-hover:opacity-100 row-center gap-1 transition-opacity duration-150 text-custom-black dark:text-white">
                   {link.label}
                   <HiOutlineExternalLink size={10} />
                 </span>

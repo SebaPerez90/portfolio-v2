@@ -127,19 +127,6 @@
 	}
 }
 
-html,
-body {
-	::-webkit-scrollbar {
-		width: 7px;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background-color: #b247ff;
-		/* background-color: #ff910063; */
-		border-radius: 10px;
-	}
-}
-
 @media (height < 600px) {
 	#hero-section {
 		min-height: 130vh;

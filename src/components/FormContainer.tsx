@@ -6,7 +6,7 @@ const FormContainer = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="contact-section" className="w-full col-center bg-white xl:pt-20 relative ">
+    <section id="contact-section" className="w-full col-center bg-white xl:pt-20 relative dark:bg-dark-neutral lg:dark:bg-dark-deep">
       {/* custom shape */}
       <div className="opacity-0 xl:opacity-100 custom-shape-divider-top-1728880923">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
