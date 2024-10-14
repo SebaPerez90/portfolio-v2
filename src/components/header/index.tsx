@@ -23,8 +23,8 @@ const Header = () => {
       className="flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-md bg-transparent z-50 dark:bg-dark-deep"
     >
       <span className="text-custom-blue font-extrabold text-2xl">SebaPerez</span>
-      <NavegationLinks disappear={'hidden sm:block'} flexDirection={'row-center'} />
-      <div className="max-[640px]:hidden row-center gap-3">
+      <NavegationLinks disappear={'hidden md:block'} flexDirection={'row-center'} />
+      <div className="max-[768px]:hidden row-center gap-3">
         <LanguageSelect />
         <ThemeButton />
       </div>
