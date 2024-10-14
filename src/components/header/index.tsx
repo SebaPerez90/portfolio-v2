@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-[8px] bg-transparent z-50 dark:bg-dark-deep"
+      className="flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-md bg-transparent z-50 dark:bg-dark-deep"
     >
       <span className="text-custom-blue font-extrabold text-2xl">SebaPerez</span>
       <NavegationLinks disappear={'hidden sm:block'} flexDirection={'row-center'} />

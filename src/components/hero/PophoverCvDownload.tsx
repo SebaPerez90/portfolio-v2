@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { FaRegFilePdf } from 'react-icons/fa';
 import { MdDownload } from 'react-icons/md';
 
-const PophoverCvDownload = () => {
+const PophoverCvDownload = ({ label }: { label: string }) => {
   const [isDownloaded, setIsDownloaded] = useState(false);
 
   const linkStyles =
@@ -13,9 +13,9 @@ const PophoverCvDownload = () => {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button size={"lg"} variant={"secondary"} className="z-50 flex gap-3 items-center">
-          Descargar cv
-          <MdDownload color='#a855f7' size={25}/>
+        <Button size={'lg'} variant={'secondary'} className="z-50 flex gap-3 items-center">
+          {label}
+          <MdDownload color="#a855f7" size={25} />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-max flex flex-col gap-1 mt-2 p-1">

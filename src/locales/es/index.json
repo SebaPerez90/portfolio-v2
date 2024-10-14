@@ -1,23 +1,30 @@
 {
+  "hero": {
+    "strong": "Hola! soy Sebastian, desarrollador con +2 años de experiencia en el area de de sistemas.",
+    "description": "Mi enfoque va más allá de escribir código; se trata de convertir ideas en aplicaciones rápidas y efectivas, donde cada detalle está pensado para crear experiencias digitales únicas, para que los usuarios disfruten de la experiencia desde el primer click.",
+    "CTA1": "Conocé más sobre mi",
+    "CTA2": "Descargar cv"
+  },
+
   "header": {
     "content": [
       {
         "id": 1,
         "label": "Contáctame",
         "ariaLabel": "contactame",
-        "href": ""
+        "href": "#contact-section"
       },
       {
         "id": 2,
         "label": "Experiencia",
         "ariaLabel": "precio de los planes",
-        "href": ""
+        "href": "#experience-section"
       },
       {
         "id": 3,
-        "label": "Proyectos",
+        "label": "Habilidades",
         "ariaLabel": "preguntas frecuentes",
-        "href": ""
+        "href": "#skills-section"
       }
     ]
   },

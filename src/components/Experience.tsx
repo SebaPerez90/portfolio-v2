@@ -17,7 +17,6 @@ export function Experience() {
           transition={{ duration: 0.3 }}
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
           className="col-center items-start gap-2"
         >
           <h2 className="title text-blue-500">{t('experience.freelance.title')}</h2>
@@ -39,7 +38,6 @@ export function Experience() {
           transition={{ duration: 0.3, delay: 0.3 }}
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
           className="col-center items-start gap-2"
         >
           <h2 className="title text-blue-500">{t('experience.gravitad.title')}</h2>
@@ -71,7 +69,6 @@ export function Experience() {
           transition={{ duration: 0.3, delay: 0.3 }}
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
           className="col-center items-start gap-2"
         >
           <h2 className="title text-blue-500 lg:w-max">{t('experience.cabaña.title')}</h2>
@@ -88,7 +85,7 @@ export function Experience() {
     },
   ];
   return (
-    <section id="#experience-section" className="mt-36 xl:w-[60%] lg:w-[80%] w-[90%] m-[0_auto]">
+    <section id="experience-section" className="mt-36 xl:w-[60%] lg:w-[80%] w-[90%] m-[0_auto]">
       <h1 className="text-center dark:text-slate-50 text-4xl font-bold text-custom-black">{t('experience.title')}</h1>
       <Timeline data={data} />
     </section>

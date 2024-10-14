@@ -3,7 +3,7 @@ import contact from '@/assets/svg/contact.svg';
 
 const FormContainer = () => {
   return (
-    <section className="w-full col-center bg-white xl:pt-20">
+    <section id='contact-section' className="w-full col-center bg-white xl:pt-20">
       <div className="flex-col md:flex-row flex justify-center items-center gap-0 h-auto xl:h-[35em] xl:shadow-2xl xl:rounded-lg overflow-hidden border-none xl:border">
 
         <div className="h-full col-center justify-around gap-12 px-7 py-10 bg-gradient-to-t from-pink-500 to-purple-900 w-full md:w-[70%] xl:w-[45em]">
