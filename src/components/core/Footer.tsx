@@ -22,7 +22,7 @@ const Footer = () => {
           <li key={element.id} className="flex items-center gap-1">
             {iconDictionary[element.id]}
             <div className="flex flex-col">
-              <span className="font-bold">{element.title}</span>
+              <span className="font-bold text-purple-500">{element.title}</span>
               <span className="font-medium text-sm">{element.description}</span>
             </div>
           </li>

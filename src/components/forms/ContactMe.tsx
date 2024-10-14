@@ -41,7 +41,7 @@ const ContactMeForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values[item.name as FormFieldName]}
-            className="bg-white text-sm py-6 sm:py-4 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:opacity-70 placeholder:italic placeholder-gray-500"
+            className="bg-white text-sm py-6 sm:py-4 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500"
           />
           {formik.touched[item.name as FormFieldName] && (
             <span className="text-red-600 text-base md:text-xs absolute md:-bottom-5 -bottom-6 left-2">
@@ -59,7 +59,8 @@ const ContactMeForm = () => {
           id="message"
           placeholder={t('contact-form.textarea.placeholder')}
           onChange={formik.handleChange}
-          className="bg-white text-sm dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:opacity-70 placeholder:italic placeholder-gray-500 min-h-[12em]"
+          value={formik.values.message}
+          className="bg-white text-sm resize-none dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 min-h-[12em]"
         />
       </Label>
 
