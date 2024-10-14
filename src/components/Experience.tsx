@@ -77,7 +77,7 @@ export function Experience() {
           viewport={{ once: true }}
           className="col-center items-start gap-2"
         >
-          <h2 className="title text-blue-500 w-max">
+          <h2 className="title text-blue-500 lg:w-max">
             Cabaña Las Lilas <b className="text-custom-black/70">-</b> Mozo de salón
           </h2>
           <span className="font-semibold text-custom-black">01/2024 - 01/2015</span>
@@ -91,8 +91,8 @@ export function Experience() {
     },
   ];
   return (
-    <section id="#experience-section" className="w-full py-20">
-      <div className="w-[60%] m-[0_auto]">
+    <section id="#experience-section" className="w-full py-20 overflow-hidden">
+      <div className="xl:w-[60%] lg:w-[80%] w-[90%] m-[0_auto]">
         <h1 className="text-center dark:text-slate-50 text-4xl font-bold text-custom-black">Experiencia.</h1>
         <Timeline data={data} />
       </div>
