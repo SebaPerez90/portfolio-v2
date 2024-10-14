@@ -2,6 +2,7 @@ import AvatarProfile from '@/components/hero/AvatarProfile';
 import { Button } from '../ui/button';
 import Beams from './Beams';
 import PophoverCvDownload from './PophoverCvDownload';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
@@ -14,23 +15,24 @@ const Hero = () => {
     >
       <Beams />
       <div className="w-[50%] md:w-[32em] col-center items-start z-40">
-        <h1 className="text-7xl dark:text-slate-50 text-custom-black font-black">
-          <strong className="dark:text-dark-sky text-7xl text-custom-blue">Front</strong>
+        <h1 className="text-7xl xl:text-8xl dark:text-slate-50 text-custom-black font-black">
+          <strong className="dark:text-dark-sky text-7xl xl:text-8xl text-custom-blue">Front</strong>
           end
           <br />
           Developer
         </h1>
-        <p className="paragraph">
+        <p className="paragraph xl:mt-4">
           <strong>{t('hero.strong')}</strong>
           <br />
           <br />
           {t('hero.description')}
         </p>
 
-        <div className="z-50 row-center mt-6">
+        <div className="z-50 row-center mt-2">
           <Button size={'lg'} variant={'primary'}>
-            <a href="https://codevibes.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://codevibes.vercel.app/" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
               {t('hero.CTA1')}
+              <HiOutlineExternalLink size={20}/>
             </a>
           </Button>
           <PophoverCvDownload label={t('hero.CTA2')} />

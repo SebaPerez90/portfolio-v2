@@ -27,7 +27,7 @@ const SkillsContainer = () => {
         {skillsData.map((skill, index) => (
           <CardSkill
             key={index}
-            delayAnimation={index * 0.2}
+            delayAnimation={index * 0.4}
             title={skill.title}
             skillsContent={skill.skillsContent as Array<string>}
           />
