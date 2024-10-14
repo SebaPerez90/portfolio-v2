@@ -80,7 +80,7 @@ export function Experience() {
           <h2 className="title text-blue-500 w-max">
             Cabaña Las Lilas <b className="text-custom-black/70">-</b> Mozo de salón
           </h2>
-          <span className="font-semibold text-custom-black">07/2024 - presente</span>
+          <span className="font-semibold text-custom-black">01/2024 - 01/2015</span>
           <ul className="list-disc marker:text-blue-500 marker:text-lg text-sm flex flex-col gap-2 mt-8">
             <li className="text-sm">Mise an place para el servicio.</li>
             <li className="text-sm">Atención y servicio al cliente.</li>
@@ -91,7 +91,7 @@ export function Experience() {
     },
   ];
   return (
-    <section id="#experience-section" className="w-full overflow-hidden">
+    <section id="#experience-section" className="w-full py-20">
       <div className="w-[60%] m-[0_auto]">
         <h1 className="text-center dark:text-slate-50 text-4xl font-bold text-custom-black">Experiencia.</h1>
         <Timeline data={data} />
