@@ -127,9 +127,7 @@
   },
 
   "contact-form": {
-    "slogan1": "Every great project",
-    "slogan2": "Starts with a",
-    "slogan3": "plan",
+    "title": "Every great project starts with a plan.",
     "description": "Send me a message, and I will get back to you shortly to explore how we can collaborate together.",
     "subtitle": "Contact me!",
 
@@ -162,6 +160,7 @@
   },
 
   "footer": {
+    "subtitle":"Let's connect!",
     "content": [
       {
         "id": 1,

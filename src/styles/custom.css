@@ -34,7 +34,6 @@
 
 /*!Theme button */
 .toggle {
-	background-color: #a855f7;
 	border-radius: 50%;
 	display: grid;
 	place-items: center;
@@ -69,27 +68,4 @@
 #switch:checked~.icon--sun {
 	transition-delay: 200ms;
 	transform: scale(1) rotate(360deg);
-}
-
-
-/*!custom shape*/
-.custom-shape-divider-top-1728880923 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1728880923 svg {
-    position: relative;
-    display: block;
-    width: calc(180% + 1.3px);
-    height: 500px;
-}
-
-.custom-shape-divider-top-1728880923 .shape-fill {
-    fill: #a955f790;
 }

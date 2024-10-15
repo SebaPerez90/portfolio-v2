@@ -23,7 +23,7 @@ const ThemeButton = () => {
   };
 
   return (
-    <label className="toggle" htmlFor="switch">
+    <label className="toggle bg-[#a855f7] dark:bg-custom-orange" htmlFor="switch">
       <input id="switch" className="input" type="checkbox" onChange={toggleTheme} />
       <div className="icon icon--moon">
         <svg height="17" width="17" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
