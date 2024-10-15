@@ -127,6 +127,20 @@
 	}
 }
 
+html,
+body {
+
+	::-webkit-scrollbar {
+		width: 7px;
+		background-color: #000000;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: #bb5dff;
+		border-radius: 10px;
+	}
+}
+
 @media (height < 600px) {
 	#hero-section {
 		min-height: 130vh;
