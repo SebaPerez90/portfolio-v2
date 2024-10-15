@@ -38,11 +38,12 @@
 	}
 
 	40% {
-		transform: translate(8em, 35em) scale(3);
+		transform: translate(8em, 30em) scale(3);
 	}
 
 	60% {
 		transform: translate(18em, 16em) scale(2);
+		opacity: 0.5;
 	}
 
 	80% {
@@ -94,4 +95,14 @@
 	100% {
 		transform: translateY(0em);
 	}
+}
+
+@keyframes image-filter {
+    0% {
+        filter: grayscale(100%) blur(10px);
+    }
+
+    100% {
+        filter: grayscale(0%) blur(0px);
+    }
 }
