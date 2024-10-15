@@ -22,7 +22,7 @@ const ContactMeForm = () => {
       id="contact-form"
       name="contact-form"
       onSubmit={formik.handleSubmit}
-      className="z-40 col-center bg-white dark:bg-dark-deep md:dark:bg-dark-neutral backdrop-blur w-full h-full gap-8"
+      className="z-40 col-center bg-white dark:bg-dark-deep md:dark:bg-dark-neutral backdrop-blur w-full h-full gap-8 md:pt-0 md:pb-0 pt-8 pb-24"
     >
       <h2 className="text-3xl font-bold text-custom-black dark:text-slate-50 flex items-end gap-2">
         {t('contact-form.subtitle')}

@@ -8,9 +8,9 @@ const FormContainer = () => {
 
   return (
     <section id="contact-section" className="w-full col-center bg-white relative dark:bg-dark-neutral lg:dark:bg-dark-deep">
-      <div className="grid grid-cols-2 h-screen">
+      <div className="md:grid grid-cols-2 h-auto md:h-screen">
 
-        <div className="z-40 h-full col-center gap-16 bg-gradient-to-t from-pink-500 dark:from-[#ff9000] dark:to-[#55350c] to-purple-900 w-full">
+        <div className="z-40 h-full col-center gap-16 bg-gradient-to-t from-pink-500 dark:from-[#ff9000] dark:to-[#55350c] to-purple-900 w-full py-14 md:py-0">
           <div className="mx-[10%] col-center gap-5">
             <h2 className="text-5xl text-white font-bold">
               {t('contact-form.slogan1')}{" "}
