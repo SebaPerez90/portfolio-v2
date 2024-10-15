@@ -127,9 +127,7 @@
   },
 
   "contact-form": {
-    "slogan1": "Todo gran proyecto",
-    "slogan2": "Comienza con un",
-    "slogan3": "plan",
+    "title": "Todo gran proyecto comienza con un plan.",
     "description": "Enviame un mensaje y en la brevedad voy comunicarme contigo para descubrir como podemos colaborar juntos.",
     "subtitle": "Contáctame!",
     "inputs": [

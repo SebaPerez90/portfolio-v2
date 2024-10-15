@@ -145,4 +145,7 @@ body {
 	#hero-section {
 		min-height: 130vh;
 	}
+	#contact-section {
+		min-height: 130vh;
+	}
 }
