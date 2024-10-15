@@ -8,7 +8,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
   const [isDownloaded, setIsDownloaded] = useState(false);
 
   const linkStyles =
-    'row-center px-6 py-4 rounded-md font-medium hover:duration-300 duration-300 hover:bg-slate-200/70 text-slate-500 hover:text-slate-600';
+    'row-center px-6 py-4 rounded-md font-medium hover:duration-300 duration-300 hover:bg-slate-200/70 dark:hover:bg-custom-orange/20 text-slate-500 hover:text-slate-600 dark:text-white';
 
   return (
     <Popover>
@@ -18,7 +18,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
           <MdDownload size={25} />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-max flex flex-col gap-1 mt-2 p-1">
+      <PopoverContent className="w-max flex flex-col gap-1 mt-2 p-1 dark:border-slate-600/60">
         <button type="button" onClick={() => setIsDownloaded(!isDownloaded)}>
           <a
             aria-label="curriculum formato pdf en ingles"
@@ -26,7 +26,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
             href="/sebastian-perez-en.pdf"
             download="sebastian_perez.pdf"
           >
-            cv-english.pdf <FaRegFilePdf />
+            cv-english.pdf <span className='text-purple-500 dark:text-custom-orange'><FaRegFilePdf size={20} /></span>
           </a>
         </button>
         <button type="button" onClick={() => setIsDownloaded(!isDownloaded)}>
@@ -36,7 +36,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
             href="/sebastian-perez-es.pdf"
             download="sebastian-perez.pdf"
           >
-            cv-español.pdf <FaRegFilePdf />
+            cv-español.pdf <span className='text-purple-500 dark:text-custom-orange'><FaRegFilePdf size={20} /></span>
           </a>
         </button>
       </PopoverContent>
