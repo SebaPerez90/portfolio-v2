@@ -217,14 +217,42 @@
 }
 
 /*!ANIMATION BALL LOADER*/
-.loader__balls__group :nth-child(3) {
-	background-color: #9356dc;
-	animation-name: jumpinBallAnimation3;
+/* From Uiverse.io by lesimpleliott */
+.loader__balls {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+.loader__balls__group {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	height: 100px;
+	width: 40px;
+}
+
+.ball {
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	position: absolute;
+	transform-origin: bottom;
+}
+
+/* ANIMATION BALL 1*/
+.loader__balls__group :nth-child(1) {
+	background-color: #99e2d0;
+	animation-name: jumpinBallAnimation1;
 	animation-duration: 1000ms;
 	animation-iteration-count: infinite;
 }
 
-@keyframes jumpinBallAnimation3 {
+@keyframes jumpinBallAnimation1 {
 	0% {
 		transform: translateY(0) scale(1, 1);
 	}
@@ -235,12 +263,12 @@
 
 	11% {
 		transform: translateY(0) scale(0.7, 1.2);
-		animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+		animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
 	}
 
 	39% {
 		transform: translateY(-75px) scale(1);
-		animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+		animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
 	}
 
 	40% {
@@ -249,12 +277,12 @@
 
 	41% {
 		transform: translateY(-75px) scale(1);
-		animation-timing-function: cubic-bezier(1, 0, 1, 1);
+		animation-timing-function: cubic-bezier(1, 0, 1, 0);
 	}
 
 	69% {
 		transform: translateY(0px) scale(1, 1);
-		animation-timing-function: cubic-bezier(1, 0, 1, 1);
+		animation-timing-function: cubic-bezier(1, 0, 1, 0);
 	}
 
 	70% {
@@ -274,14 +302,120 @@
 	}
 }
 
-.loader__balls__group .item1 {
-	animation-delay: 0ms;
+/* !Loading 2*/
+.dot-spinner {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	--uib-speed: 0.9s;
+	height: 2.8rem;
+	width: 2.8rem;
+	/*animation: float 3s linear infinite;*/
 }
 
-.loader__balls__group .item2 {
-	animation-delay: 100ms;
+@keyframes float {
+	0% {
+		transform: rotate(0deg) translate(100px) rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg) translate(100px) rotate(-360deg);
+	}
 }
 
-.loader__balls__group .item3 {
-	animation-delay: 200ms;
+.dot-spinner__dot::before {
+	content: '';
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+	background-color: #a855f7;
+	filter: drop-shadow(0 0 10px rgb(95, 150, 202));
+	box-shadow: -6px -6px 11px #a855f7,
+		6px 6px 11px #a855f7;
+	transform: scale(0);
+	opacity: 0.5;
+	animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+	box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+}
+
+.dot-spinner__dot {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%;
+	width: 100%;
+}
+
+.dot-spinner__dot:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.dot-spinner__dot:nth-child(2)::before {
+	animation-delay: calc(var(--uib-speed) * -0.875);
+}
+
+.dot-spinner__dot:nth-child(3) {
+	transform: rotate(90deg);
+}
+
+.dot-spinner__dot:nth-child(3)::before {
+	animation-delay: calc(var(--uib-speed) * -0.75);
+}
+
+.dot-spinner__dot:nth-child(4) {
+	transform: rotate(135deg);
+}
+
+.dot-spinner__dot:nth-child(4)::before {
+	animation-delay: calc(var(--uib-speed) * -0.625);
+}
+
+.dot-spinner__dot:nth-child(5) {
+	transform: rotate(180deg);
+}
+
+.dot-spinner__dot:nth-child(5)::before {
+	animation-delay: calc(var(--uib-speed) * -0.5);
+}
+
+.dot-spinner__dot:nth-child(6) {
+	transform: rotate(225deg);
+}
+
+.dot-spinner__dot:nth-child(6)::before {
+	animation-delay: calc(var(--uib-speed) * -0.375);
+}
+
+.dot-spinner__dot:nth-child(7) {
+	transform: rotate(270deg);
+}
+
+.dot-spinner__dot:nth-child(7)::before {
+	animation-delay: calc(var(--uib-speed) * -0.25);
+}
+
+.dot-spinner__dot:nth-child(8) {
+	transform: rotate(315deg);
+}
+
+.dot-spinner__dot:nth-child(8)::before {
+	animation-delay: calc(var(--uib-speed) * -0.125);
+}
+
+@keyframes pulse0112 {
+
+	0%,
+	100% {
+		transform: scale(0);
+		opacity: 0.5;
+	}
+
+	50% {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
