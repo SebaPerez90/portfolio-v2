@@ -1,14 +1,17 @@
-import Header from '@/components/header';
-import Hero from '@/components/hero/Hero';
+import { Suspense, lazy } from 'react';
 import { Toaster } from 'react-hot-toast';
-import Footer from '@/components/core/Footer';
-import FormContainer from '@/components/FormContainer';
-import SkillsContainer from './components/SkillsContainer';
-import { Experience } from './components/Experience';
+import Loading from './components/core/Loading';
+
+const Header = lazy(() => import('@/components/header'));
+const Hero = lazy(() => import('@/components/hero/Hero'));
+const Footer = lazy(() => import('@/components/core/Footer'));
+const FormContainer = lazy(() => import('@/components/FormContainer'));
+const SkillsContainer = lazy(() => import('@/components/SkillsContainer'));
+const Experience = lazy(() => import('@/components/Experience'));
 
 function App() {
   return (
-    <>
+    <Suspense fallback={<Loading/>}>
       <Header />
       <main className="col-center gap-0 bg-white dark:bg-dark-neutral">
         <Hero />
@@ -18,7 +21,7 @@ function App() {
       </main>
       <Footer />
       <Toaster />
-    </>
+    </Suspense>
   );
 }
 

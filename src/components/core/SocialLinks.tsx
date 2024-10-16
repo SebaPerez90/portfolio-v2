@@ -40,7 +40,7 @@ const SocialLinks = ({ subtitle }: { subtitle: string }) => {
   return (
     <div className="row-center">
       <figure className="w-28 h-28 rounded-full overflow-hidden">
-        <img src={avatar_image} alt="avatar_image" className="size-full object-cover" />
+        <img src={avatar_image} loading='lazy' alt="avatar_image" className="size-full object-cover" />
       </figure>
       <nav className="col-center  mt-6">
         <h2 className="text-2xl font-bold text-custom-black dark:text-white text-center">{subtitle}</h2>

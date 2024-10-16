@@ -2,7 +2,7 @@ import { Timeline } from '@/components/ui/Timeline';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
-export function Experience() {
+const Experience = () => {
   const { t } = useTranslation();
 
   const freelanceResponsabilities = t('experience.freelance.content', { returnObjects: true });
@@ -11,7 +11,7 @@ export function Experience() {
 
   const data = [
     {
-      title: t("experience.freelance.timeLine"),
+      title: t('experience.freelance.timeLine'),
       content: (
         <motion.div
           transition={{ duration: 0.3 }}
@@ -20,7 +20,9 @@ export function Experience() {
           className="col-center items-start gap-2"
         >
           <h2 className="title dark:text-custom-orange text-blue-500 text-3xl lg:text-2xl">{t('experience.freelance.title')}</h2>
-          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black/70">{t('experience.freelance.dates')}</span>
+          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black/70">
+            {t('experience.freelance.dates')}
+          </span>
           <ul className="ml-5 list-disc marker:text-blue-500 dark:marker:text-custom-orange marker:text-lg flex flex-col gap-2 mt-8">
             {(freelanceResponsabilities as Array<string>).map((element, index) => (
               <li className="text-lg lg:text-sm dark:text-slate-100 text-custom-black" key={index}>
@@ -32,7 +34,7 @@ export function Experience() {
       ),
     },
     {
-      title: t("experience.gravitad.timeLine"),
+      title: t('experience.gravitad.timeLine'),
       content: (
         <motion.div
           transition={{ duration: 0.3, delay: 0.3 }}
@@ -41,7 +43,9 @@ export function Experience() {
           className="col-center items-start gap-2"
         >
           <h2 className="title dark:text-custom-orange text-blue-500 text-3xl lg:text-2xl">{t('experience.gravitad.title')}</h2>
-          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black">{t('experience.gravitad.dates')}</span>
+          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black">
+            {t('experience.gravitad.dates')}
+          </span>
           <ul className="ml-5 list-disc marker:text-blue-500 dark:marker:text-custom-orange marker:text-lg flex flex-col gap-2 mt-8">
             {(gravitadResponsabilities as Array<string>).map((element, index) => (
               <li className="text-lg lg:text-sm dark:text-slate-100 text-custom-black" key={index}>
@@ -63,7 +67,7 @@ export function Experience() {
       ),
     },
     {
-      title: t("experience.cabaña.timeLine"),
+      title: t('experience.cabaña.timeLine'),
       content: (
         <motion.div
           transition={{ duration: 0.3, delay: 0.3 }}
@@ -71,8 +75,12 @@ export function Experience() {
           whileInView={{ opacity: 1, scale: 1 }}
           className="col-center items-start gap-2"
         >
-          <h2 className="title dark:text-custom-orange text-blue-500 text-3xl lg:text-2xl lg:w-max">{t('experience.cabaña.title')}</h2>
-          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black">{t('experience.cabaña.dates')}</span>
+          <h2 className="title dark:text-custom-orange text-blue-500 text-3xl lg:text-2xl lg:w-max">
+            {t('experience.cabaña.title')}
+          </h2>
+          <span className="text-lg lg:text-base font-semibold dark:text-white text-custom-black">
+            {t('experience.cabaña.dates')}
+          </span>
           <ul className="ml-5 list-disc marker:text-blue-500 dark:marker:text-custom-orange marker:text-lg flex flex-col gap-2 mt-8">
             {(waiterResponsabilities as Array<string>).map((element, index) => (
               <li className="text-lg lg:text-sm dark:text-slate-100 text-custom-black" key={index}>
@@ -90,4 +98,6 @@ export function Experience() {
       <Timeline data={data} />
     </section>
   );
-}
+};
+
+export default Experience;
