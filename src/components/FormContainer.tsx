@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ContactMeForm from './forms/ContactMe';
 import contact from '@/assets/svg/contact.svg';
+import { motion } from 'framer-motion';
 
 const FormContainer = () => {
   const { t } = useTranslation();
@@ -13,7 +14,10 @@ const FormContainer = () => {
           <p className="text-lg lg:text-base text-slate-100">{t('contact-form.description')}</p>
         </div>
         <figure className="w-[24em] h-auto">
-          <img
+          <motion.img
+            transition={{ duration: 0.3, delay: 0.2 }}
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             loading="lazy"
             src={contact}
             width={400}

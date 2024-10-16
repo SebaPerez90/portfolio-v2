@@ -6,7 +6,8 @@ import { useTranslation } from 'react-i18next';
 import type { LocaleProjectRequestForm } from '@/types';
 import { ContactSchema } from '@/schemas/contact.schema';
 import { useDynamicFormik } from '@/hooks/useFormik';
-import { HiOutlineMailOpen } from "react-icons/hi";
+import { HiOutlineMailOpen } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 const ContactMeForm = () => {
   const { t } = useTranslation();
@@ -18,7 +19,10 @@ const ContactMeForm = () => {
   });
 
   return (
-    <form
+    <motion.form
+      transition={{ duration: 0.4, delay: 0.3 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
       id="contact-form"
       name="contact-form"
       onSubmit={formik.handleSubmit}
@@ -26,14 +30,14 @@ const ContactMeForm = () => {
     >
       <h2 className="text-3xl font-bold text-custom-black dark:text-slate-50 flex items-end gap-2">
         {t('contact-form.subtitle')}
-        <span className='text-purple-500 dark:text-custom-orange'>
-          <HiOutlineMailOpen size={40}/>
+        <span className="text-purple-500 dark:text-custom-orange">
+          <HiOutlineMailOpen size={40} />
         </span>
       </h2>
       {(contactFormData as Array<LocaleProjectRequestForm>).map((item) => (
         <Label
           key={item.id}
-          className="flex flex-col text-dark-soft dark:text-slate-50 font-semibold w-[80%] xl:w-[70%] text-lg"
+          className="flex flex-col text-dark-soft dark:text-slate-50 font-semibold w-[80%] xl:w-[70%]"
           htmlFor={item.name}
         >
           {item.label}
@@ -47,24 +51,21 @@ const ContactMeForm = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values[item.name as FormFieldName]}
-            className="bg-white text-sm py-6 sm:py-4 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 dark:border-custom-orange/70 dark:focus:border-dark-deep"
+            className="bg-white text-sm py-6 sm:py-4 mt-1 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 dark:border-custom-orange/70 dark:focus:border-dark-deep"
           />
           {formik.touched[item.name as FormFieldName] && (
             <span className="text-red-600 text-base md:text-xs h-4">{formik.errors[item.name as FormFieldName]}</span>
           )}
         </Label>
       ))}
-      <Label
-        htmlFor="message"
-        className="flex flex-col text-dark-soft dark:text-slate-50 font-semibold w-[80%] xl:w-[70%] text-lg"
-      >
+      <Label htmlFor="message" className="flex flex-col text-dark-soft dark:text-slate-50 font-semibold w-[80%] xl:w-[70%]">
         {t('contact-form.textarea.label')}
         <Textarea
           id="message"
           placeholder={t('contact-form.textarea.placeholder')}
           onChange={formik.handleChange}
           value={formik.values.message}
-          className="bg-white text-sm resize-none dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 dark:border-custom-orange/70 dark:focus:border-dark-deep placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 min-h-[12em]"
+          className="bg-white text-sm resize-none mt-1 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 dark:border-custom-orange/70 dark:focus:border-dark-deep placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 min-h-[12em]"
         />
       </Label>
 
@@ -82,7 +83,7 @@ const ContactMeForm = () => {
           {t('contact-form.buttonLabel.submit')}
         </Button>
       </div>
-    </form>
+    </motion.form>
   );
 };
 
