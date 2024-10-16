@@ -10,7 +10,6 @@
     "format": "biome format --write ./src",
     "lint:check": "biome lint ./src",
     "lint:apply": "biome check --apply ./src",
-    "prepare": "husky",
     "lint": "npm run format && npm run lint:check && npm run lint:apply"
   },
   "dependencies": {
