@@ -23,7 +23,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
           <a
             aria-label="curriculum formato pdf en ingles"
             className={linkStyles}
-            href="/public/sebastian_perez.pdf"
+            href="sebastian_perez.pdf"
             download="sebastian_perez.pdf"
           >
             cv-english.pdf <span className='text-purple-500 dark:text-custom-orange'><FaRegFilePdf size={20} /></span>
@@ -33,7 +33,7 @@ const PophoverCvDownload = ({ label }: { label: string }) => {
           <a
             aria-label="curriculum formato pdf en español"
             className={linkStyles}
-            href="/public/sebastian-perez.pdf"
+            href="sebastian-perez.pdf"
             download="sebastian-perez.pdf"
           >
             cv-español.pdf <span className='text-purple-500 dark:text-custom-orange'><FaRegFilePdf size={20} /></span>
