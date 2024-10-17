@@ -54,7 +54,7 @@ const ContactMeForm = () => {
             className="bg-white text-sm py-6 sm:py-4 mt-1 dark:bg-dark-neutral border border-purple-400 focus:border-purple-500 placeholder:font-normal placeholder:opacity-80 placeholder:italic placeholder-gray-500 dark:border-custom-orange/70 dark:focus:border-dark-deep"
           />
           {formik.touched[item.name as FormFieldName] && (
-            <span className="text-red-600 text-base md:text-xs h-4">{formik.errors[item.name as FormFieldName]}</span>
+            <span className="text-red-600 text-base md:text-xs">{formik.errors[item.name as FormFieldName]}</span>
           )}
         </Label>
       ))}
