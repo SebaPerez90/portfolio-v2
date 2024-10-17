@@ -27,9 +27,9 @@ const Hero = () => {
       <motion.div ref={scope} className="w-[50%] md:w-[32em] col-center items-start z-40">
         <motion.h1
           initial={{ opacity: 0, scale: 0, x: 400, filter: 'blur(5px)' }}
-          className="text-7xl xl:text-8xl dark:text-slate-50 text-custom-black font-black"
+          className="text-7xl dark:text-slate-50 text-custom-black font-black"
         >
-          <strong className="dark:text-dark-sky text-7xl xl:text-8xl text-custom-blue dark:text-custom-orange">Front</strong>
+          <strong className="dark:text-dark-sky text-7xl text-custom-blue dark:text-custom-orange">Front</strong>
           end
           <br />
           Developer
