@@ -9,11 +9,9 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (headerRef.current && window.scrollY !== 0) {
-        headerRef.current.classList.add('bg-white', 'dark:bg-dark-soft');
-        headerRef.current.classList.toggle('[box-shadow:0_0_30px_0_#00000033]');
+        headerRef.current.classList.add('bg-white', 'dark:bg-dark-soft', '[box-shadow:0_0_30px_0_#00000033]');
       } else {
-        headerRef.current?.classList.remove('bg-white', 'dark:bg-dark-soft');
-        headerRef.current?.classList.remove('[box-shadow:0_0_30px_0_#00000033]');
+        headerRef.current?.classList.remove('bg-white', 'dark:bg-dark-soft', '[box-shadow:0_0_30px_0_#00000033]');
       }
     };
 
@@ -22,7 +20,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header ref={headerRef} className="duration-1000 flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-md z-50">
+    <header
+      ref={headerRef}
+      className="duration-1000 flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-md z-50"
+    >
       <span className="text-custom-blue dark:text-custom-orange font-extrabold text-2xl">SebaPerez</span>
       <NavegationLinks disappear={'hidden md:block'} flexDirection={'row-center'} />
       <div className="max-[768px]:hidden row-center gap-3">
