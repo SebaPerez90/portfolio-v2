@@ -96,7 +96,8 @@
         "Github",
         "NestJS",
         "Docker",
-        "TypeORM"
+        "ORMs",
+        "ODMs"
       ]
     },
     "soft-skills": {
@@ -159,7 +160,7 @@
   },
 
   "footer": {
-    "subtitle":"Conectemos!",
+    "subtitle": "Conectemos!",
     "content": [
       {
         "id": 1,
