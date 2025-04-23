@@ -3,7 +3,7 @@
     "strong": "Hi! I'm Sebastian, a developer with over 2 years of experience in the IT field.",
     "description": "My approach goes beyond writing code; it's about turning ideas into fast and effective applications, where every detail is designed to create unique digital experiences, so users enjoy the experience from the very first click.",
     "CTA1": "Learn more about me",
-    "CTA2": "Download resume"
+    "CTA2": "Download cv"
   },
 
   "header": {
@@ -32,39 +32,26 @@
   "experience": {
     "title": "Experience.",
     "freelance": {
-      "timeLine": "October 2024",
+      "timeLine": "August 2024",
       "title": "Freelance Developer",
-      "dates": "10/2024 - present",
+      "dates": "08/2024 - present",
       "content": [
-        "Development of landing pages to reflect the essence of your business on a website.",
-        "Development of custom online stores (e-commerce).",
-        "Development of user interfaces using React to create attractive and smooth experiences.",
-        "Design and implementation of scalable web applications, optimizing performance and accessibility.",
-        "Development of user interfaces using React.js and its entire ecosystem.",
-        "Integration of APIs and backend services to ensure seamless interaction between the layers of the application."
+        "I develop landing pages that reflect the brand identity of each business.",
+        "I build customized online stores (e-commerce) tailored to specific needs.",
+        "I design and develop scalable web applications optimized for performance and accessibility.",
+        "I create digital solutions adapted to different business needs, enhancing online presence and user experience."
       ]
     },
     "gravitad": {
       "timeLine": "August 2024",
-      "title": "Gravitad - Frontend Developer",
-      "dates": "07/2024 - present",
+      "title": "Dazlabs - Frontend Developer",
+      "dates": "08/2024 - present",
       "content": [
-        "Development of user interfaces using React.js with Vite.",
-        "Development of web applications.",
-        "Development of blockchain applications.",
-        "Collaborating with the UX/UI department to faithfully replicate the design.",
-        "Development of user interfaces using React.js and its entire ecosystem.",
-        "Backend integration connections."
-      ]
-    },
-    "cabaña": {
-      "timeLine": "January 2014",
-      "title": "Cabaña Las Lilas - Waiter",
-      "dates": "01/2014 - 01/2015",
-      "content": [
-        "Mise en place for service.",
-        "Customer service and attention.",
-        "Management of restaurant staff."
+        "I develop user interfaces using React.js, ensuring performance and scalability.",
+        "I build functional and responsive web applications.",
+        "I work closely with the UX/UI team to accurately translate designs into interfaces.",
+        "I collaborate with the backend team to integrate features and ensure smooth communication between services.",
+        "We follow the Scrum methodology to organize tasks, encourage collaboration, and meet deadlines."
       ]
     }
   },
@@ -78,9 +65,7 @@
         "React.js",
         "Tailwind CSS",
         "Javascript",
-        "Sass",
         "Next.js",
-        "Figma",
         "TypeScript"
       ]
     },
@@ -91,26 +76,18 @@
         "Express.js",
         "PostgreSQL",
         "MongoDB",
-        "Git",
-        "Github",
         "NestJS",
-        "Docker",
-        "ORMs",
-        "ODMs"
+        "REST API",
+        "GraphQL API"
       ]
     },
-    "soft-skills": {
-      "label": "Soft Skills",
-      "content": [
-        "SCRUM agile",
-        "Team player",
-        "Self-management",
-        "Creativity",
-        "Adaptability",
-        "Jira",
-        "Growth mindset",
-        "Problem-solving"
-      ]
+    "tools": {
+      "label": "Tools",
+      "content": ["Figma", "Postman", "Jira", "Git", "Github"]
+    },
+    "mobile": {
+      "label": "Mobile",
+      "content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
     }
   },
 
@@ -160,7 +137,7 @@
   },
 
   "footer": {
-    "subtitle":"Let's connect!",
+    "subtitle": "Let's connect!",
     "content": [
       {
         "id": 1,

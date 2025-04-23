@@ -4,148 +4,147 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--background: 0 0% 100%;
-		--foreground: 0 0% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 0 0% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 0 0% 3.9%;
-		--primary: 0 0% 9%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 0 0% 96.1%;
-		--secondary-foreground: 0 0% 9%;
-		--muted: 0 0% 96.1%;
-		--muted-foreground: 0 0% 45.1%;
-		--accent: 0 0% 96.1%;
-		--accent-foreground: 0 0% 9%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 89.8%;
-		--input: 0 0% 89.8%;
-		--ring: 0 0% 3.9%;
-		--chart-1: 12 76% 61%;
-		--chart-2: 173 58% 39%;
-		--chart-3: 197 37% 24%;
-		--chart-4: 43 74% 66%;
-		--chart-5: 27 87% 67%;
-		--radius: 0.5rem;
-	}
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
 
-	.dark {
-		--background: 0 0% 3.9%;
-		--foreground: 0 0% 98%;
-		--card: 0 0% 3.9%;
-		--card-foreground: 0 0% 98%;
-		--popover: 0 0% 3.9%;
-		--popover-foreground: 0 0% 98%;
-		--primary: 0 0% 98%;
-		--primary-foreground: 0 0% 9%;
-		--secondary: 0 0% 14.9%;
-		--secondary-foreground: 0 0% 98%;
-		--muted: 0 0% 14.9%;
-		--muted-foreground: 0 0% 63.9%;
-		--accent: 0 0% 14.9%;
-		--accent-foreground: 0 0% 98%;
-		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 0 0% 14.9%;
-		--input: 0 0% 14.9%;
-		--ring: 0 0% 83.1%;
-		--chart-1: 220 70% 50%;
-		--chart-2: 160 60% 45%;
-		--chart-3: 30 80% 55%;
-		--chart-4: 280 65% 60%;
-		--chart-5: 340 75% 55%;
-	}
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
 }
 
 @layer components {
-	.row-center {
-		@apply flex items-center justify-center gap-5;
-	}
+  .row-center {
+    @apply flex items-center justify-center gap-5;
+  }
 
-	.col-center {
-		@apply flex flex-col items-center justify-center gap-5;
-	}
+  .col-center {
+    @apply flex flex-col items-center justify-center gap-5;
+  }
 
-	.gradient-title {
-		@apply font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-500 to-blue-400;
-	}
+  .gradient-title {
+    @apply font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-500 to-blue-400;
+  }
 
-	.gradient-title-dark {
-		@apply font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-indigo-300 dark:from-pink-500 dark:to-indigo-400;
-	}
+  .gradient-title-dark {
+    @apply font-bold text-transparent bg-clip-text bg-gradient-to-b from-pink-300 to-indigo-300 dark:from-pink-500 dark:to-indigo-400;
+  }
 
-	.title {
-		@apply text-2xl font-extrabold text-black dark:text-white;
-	}
+  .title {
+    @apply text-2xl font-extrabold text-black dark:text-white;
+  }
 
-	.paragraph {
-		@apply text-base text-custom-black font-medium dark:text-slate-300;
-	}
+  .paragraph {
+    @apply text-base text-custom-black font-medium dark:text-slate-300;
+  }
 
-	.test {
-		@apply border border-red-600;
-	}
+  .test {
+    @apply border border-red-600;
+  }
 
-	.test2 {
-		@apply border border-blue-600;
-	}
+  .test2 {
+    @apply border border-blue-600;
+  }
 
-	.custom-btn {
-		@apply py-2 px-4 text-xs border-2 rounded-md text-purple-500 border-purple-500 hover:bg-purple-500 hover:duration-200 duration-200 hover:text-white font-semibold active:scale-95 active:border-purple-800;
-	}
+  .custom-btn {
+    @apply py-2 px-4 text-xs border-2 rounded-md text-purple-500 border-purple-500 hover:bg-purple-500 hover:duration-200 duration-200 hover:text-white font-semibold active:scale-95 active:border-purple-800;
+  }
 
-	.custom-btn2 {
-		@apply bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:from-blue-400 hover:to-purple-400;
-	}
+  .custom-btn2 {
+    @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold hover:from-blue-400 hover:to-purple-400;
+  }
 }
 
 @layer base {
-	* {
-		padding: 0;
-		margin: 0;
-		scroll-behavior: smooth;
-		box-sizing: border-box;
-		font: inherit;
-		font-size: calc(9px + 0.5vw);
-		transition: background ease-out 400ms;
-		font-family: "Poppins", sans-serif;
+  * {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: calc(9px + 0.5vw);
+    transition: background ease-out 400ms;
+    font-family: "Poppins", sans-serif;
 
-		/* hide default increment and decrement indicator */
-		input[type="number"]::-webkit-outer-spin-button,
-		input[type="number"]::-webkit-inner-spin-button {
-			-webkit-appearance: none;
-			margin: 0;
-		}
+    /* hide default increment and decrement indicator */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
 
-		input[type="number"] {
-			-moz-appearance: textfield;
-			appearance: auto;
-		}
-	}
+    input[type="number"] {
+      -moz-appearance: textfield;
+      appearance: auto;
+    }
+  }
 }
 
 html,
 body {
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #000000;
+  }
 
-	::-webkit-scrollbar {
-		width: 7px;
-		background-color: #000000;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background-color: #bb5dff;
-		border-radius: 10px;
-	}
+  ::-webkit-scrollbar-thumb {
+    background-color: #bb5dff;
+    border-radius: 10px;
+  }
 }
 
 @media (height < 600px) {
-	#hero-section {
-		min-height: 130vh;
-	}
-	#contact-section {
-		min-height: 140vh;
-	}
+  #hero-section {
+    min-height: 130vh;
+  }
+  #contact-section {
+    min-height: 140vh;
+  }
 }

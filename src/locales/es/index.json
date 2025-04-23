@@ -1,7 +1,7 @@
 {
   "hero": {
-    "strong": "Hola! soy Sebastian, desarrollador con +2 años de experiencia en el area de de sistemas.",
-    "description": "Mi enfoque va más allá de escribir código; se trata de convertir ideas en aplicaciones rápidas y efectivas, donde cada detalle está pensado para crear experiencias digitales únicas, para que los usuarios disfruten de la experiencia desde el primer click.",
+    "strong": "+3 años de experiencia  |  Buenos Aires, Argentina.",
+    "description": "Desarrollo software a medida cuidando siempre los detalles y necesidades de cada negocio. Hoy día estoy incursionando en el desarrollo mobile y enfoncado en seguir creciendo como profesional.",
     "CTA1": "Conocé más sobre mi",
     "CTA2": "Descargar cv"
   },
@@ -32,40 +32,27 @@
   "experience": {
     "title": "Experiencia.",
     "freelance": {
-      "timeLine": "Octubre 2024",
+      "timeLine": "Agosto 2024",
       "title": "Desarrollador Freelance",
-      "dates": "10/2024 - presente",
+      "dates": "08/2024 - presente",
       "content": [
-        "Desarrollo de landing pages para reflejar la escencia de tu negocio en una web.",
-        "Desarrollo de tiendas online (e-comerce) a medida.",
-        "Desarrollo de interfaces de usuario utilizando React para crear experiencias atractivas y fluidas.",
-        "Diseño e implementación de aplicaciones web escalables, optimizando el rendimiento y la accesibilidad.",
-        "Desarrollo de interfaces de usuario utilizando React.js y todo su ecosistema.",
-        "Integración de APIs y servicios backend para garantizar una interacción fluida entre las capas de la aplicación."
+        "Desarrollo landing pages que reflejan la identidad del negocio.",
+        "Desarrollo tiendas online personalizadas (e-commerce).",
+        "Diseño y desarrollo aplicaciones web escalables, optimizadas en rendimiento y accesibilidad.",
+        "Creo soluciones digitales adaptadas a distintas necesidades comerciales, mejorando la presencia online y la experiencia del usuario."
       ]
     },
     "gravitad": {
       "timeLine": "Agosto 2024",
-      "title": "Gravitad - Desarrollador Frontend",
-      "company": "Gravitad",
-      "dates": "07/2024 - presente",
+      "title": "Dazlabs - Desarrollador Frontend",
+      "company": "Dazlabs",
+      "dates": "08/2024 - presente",
       "content": [
-        "Desarrollo de interfaces de usuario utilizando React.js con Vite.",
-        "Desarrollo de aplicaciones web.",
-        "Desarrollo de aplicaciones blockchain.",
-        "Trabajar en conjunto con el departamente de UX/UI para hacer una fiel réplica del diseño.",
-        "Desarrollo de interfaces de usuario utilizando React.js y todo su ecosistema.",
-        "Integraciones de conexiones con el departamento de backend."
-      ]
-    },
-    "cabaña": {
-      "timeLine": "Enero 2014",
-      "title": "Cabaña Las Lilas - Mozo de salón",
-      "dates": "01/2014 - 01/2015",
-      "content": [
-        "Mise an place para el servicio.",
-        "Atención y servicio al cliente.",
-        "Manejo de personal del salón."
+        "Desarrollo interfaces de usuario con React.js, asegurando rendimiento y escalabilidad.",
+        "Desarrollo aplicaciones web funcionales y responsivas.",
+        "Trabajo en conjunto con el equipo de UX/UI para traducir diseños en interfaces precisas.",
+        "Colaboro con el equipo backend para integrar funcionalidades y garantizar una comunicación fluida entre servicios.",
+        "Seguimos la metodología Scrum para organizar tareas, fomentar la colaboración y cumplir con los deadlines."
       ]
     }
   },
@@ -79,9 +66,7 @@
         "React.js",
         "Tailwind CSS",
         "Javascript",
-        "Sass",
         "Next.js",
-        "Figma",
         "TypeScript"
       ]
     },
@@ -89,29 +74,21 @@
       "label": "Backend",
       "content": [
         "Node.js",
+        "NestJS",
+        "MongoDB",
         "Express.js",
         "PostgreSQL",
-        "MongoDB",
-        "Git",
-        "Github",
-        "NestJS",
-        "Docker",
-        "ORMs",
-        "ODMs"
+        "REST API",
+        "GraphQL API"
       ]
     },
-    "soft-skills": {
-      "label": "Habilidades blandas",
-      "content": [
-        "SCRUM agile",
-        "Jugador de equipo",
-        "Autogestión",
-        "Creatividad",
-        "Adaptabilidad",
-        "Jira",
-        "Mentalidad de crecimiento",
-        "Resolución de problemas"
-      ]
+    "tools": {
+      "label": "Herramientas",
+      "content": ["Figma", "Postman", "Jira", "Git", "Github"]
+    },
+    "mobile": {
+      "label": "Mobile",
+      "content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
     }
   },
 
