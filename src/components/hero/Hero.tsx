@@ -2,7 +2,6 @@ import AvatarProfile from "@/components/hero/AvatarProfile";
 import { Button } from "../ui/button";
 import Beams from "./Beams";
 import PophoverCvDownload from "./PophoverCvDownload";
-import { HiOutlineExternalLink } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
@@ -32,9 +31,6 @@ const Hero = () => {
 
         <div className="z-50 row-center mt-2">
           <Button size={"lg"}>Charlemos</Button>
-          <Button size={"lg"} variant={"outline"}>
-            Descargar cv
-          </Button>
           {/* <Button size={"lg"} variant={"primary"}>
             <a
               href="https://codevibes.vercel.app/"
@@ -46,7 +42,7 @@ const Hero = () => {
               <HiOutlineExternalLink size={20} />
             </a>
           </Button> */}
-          {/* <PophoverCvDownload label={t("hero.CTA2")} /> */}
+          <PophoverCvDownload label={t("hero.CTA2")} />
         </div>
       </div>
       <AvatarProfile />
