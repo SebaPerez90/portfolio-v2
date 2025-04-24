@@ -11,8 +11,7 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
       transition={{ duration: 0.2 }}
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
-      className="shadow-2xl rounded-lg w-[25em] min-h-[17em] bg-white flex flex-col justify-center gap-8 items-center px-3 pb-8 dark:bg-dark-deep dark:border-dark-soft
-         shadow-purple-500/10 dark:shadow-transparent border-2 border-purple-500/10 mx-auto cursor-pointer"
+      className="shadow-2xl rounded-lg  w-[19em] min-[450px]:w-[25em] opacity-20 min-h-[17em] bg-white flex flex-col justify-center gap-8 items-center px-3 pb-8 dark:bg-dark-deep dark:border-dark-soft shadow-purple-500/10 dark:shadow-transparent border-2 border-purple-500/10 mx-auto cursor-pointer"
     >
       <h3 className="title text-center text-custom-black mt-8">{title}</h3>
       <ul className="flex items-center gap-3 w-[92%] flex-wrap justify-center">

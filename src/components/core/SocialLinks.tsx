@@ -27,7 +27,7 @@ const socialLinks = [
 const SocialLinks = ({ subtitle }: { subtitle: string }) => {
   return (
     <nav className="flex flex-col items-center gap-8">
-      <h2 className="text-xl font-medium text-custom-black dark:text-white">{subtitle}</h2>
+      <h2 className="text-xl font-medium text-custom-black dark:text-white hidden md:block">{subtitle}</h2>
       <ul className="row-center">
         {socialLinks.map((link, index) => (
           <li key={index} className="group">

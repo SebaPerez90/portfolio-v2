@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="col-center bg-white dark:bg-dark-neutral">
+      <main id="main-section" className="col-center bg-white dark:bg-dark-neutral">
         <Hero />
         <Experience />
         <SkillsContainer />

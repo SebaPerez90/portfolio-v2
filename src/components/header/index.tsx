@@ -10,9 +10,9 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (headerRef.current && window.scrollY !== 0) {
-        headerRef.current.classList.add('bg-white', 'dark:bg-dark-soft', '[box-shadow:0_0_30px_0_#00000033]');
+        headerRef.current.classList.add('bg-white/40', 'dark:bg-dark-soft/40', '[box-shadow:0_0_30px_0_#00000033]');
       } else {
-        headerRef.current?.classList.remove('bg-white', 'dark:bg-dark-soft', '[box-shadow:0_0_30px_0_#00000033]');
+        headerRef.current?.classList.remove('bg-white/40', 'dark:bg-dark-soft/40', '[box-shadow:0_0_30px_0_#00000033]');
       }
     };
 
@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header ref={headerRef} className="w-full py-3 backdrop-blur-md z-50 fixed px-10 flex items-center justify-between">
-      <div className="flex items-center justify-between w-[clamp(600px,100%,1300px)] mx-auto">
+      <div className="bg-transparent flex items-center justify-between w-[clamp(600px,100%,1300px)] mx-auto">
         <div className="flex items-center gap-2">
           <figure className="rounded-full overflow-hidden size-[3em]">
             <img

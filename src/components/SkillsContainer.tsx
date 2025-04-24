@@ -46,7 +46,7 @@ const SkillsContainer = () => {
           }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          className="h-[22em] custom-swiper"
+          className="min-[450px]:h-[22em] h-[25em] custom-swiper"
         >
           {skillsData.map((skill, index) => (
             <SwiperSlide key={index} className="py-5 custom-swiper">
