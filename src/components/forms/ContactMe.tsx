@@ -1,13 +1,13 @@
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { useTranslation } from 'react-i18next';
-import type { LocaleProjectRequestForm } from '@/types';
-import { ContactSchema } from '@/schemas/contact.schema';
 import { useDynamicFormik } from '@/hooks/useFormik';
-import { HiOutlineMailOpen } from 'react-icons/hi';
+import { ContactSchema } from '@/schemas/contact.schema';
+import type { LocaleProjectRequestForm } from '@/types';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import { HiOutlineMailOpen } from 'react-icons/hi';
 
 const ContactMeForm = () => {
   const { t } = useTranslation();
@@ -28,12 +28,12 @@ const ContactMeForm = () => {
       onSubmit={formik.handleSubmit}
       className="z-40 col-center bg-white dark:bg-dark-deep md:dark:bg-dark-neutral backdrop-blur w-full h-full gap-8 md:pt-0 md:pb-0 pt-8 pb-24"
     >
-      <h2 className="text-3xl font-bold text-custom-black dark:text-slate-50 flex items-end gap-2">
+      {/* <h2 className="text-3xl font-bold text-custom-black dark:text-slate-50 flex items-end gap-2">
         {t('contact-form.subtitle')}
         <span className="text-purple-500 dark:text-custom-orange">
           <HiOutlineMailOpen size={40} />
         </span>
-      </h2>
+      </h2> */}
       {(contactFormData as Array<LocaleProjectRequestForm>).map((item) => (
         <Label
           key={item.id}

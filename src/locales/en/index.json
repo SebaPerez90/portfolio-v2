@@ -1,159 +1,159 @@
 {
-  "hero": {
-    "strong": "Hi! I'm Sebastian, a developer with over 2 years of experience in the IT field.",
-    "description": "My approach goes beyond writing code; it's about turning ideas into fast and effective applications, where every detail is designed to create unique digital experiences, so users enjoy the experience from the very first click.",
-    "CTA1": "Learn more about me",
-    "CTA2": "Download cv"
-  },
+	"hero": {
+		"strong": "Hi! I'm Sebastian, a developer with over 2 years of experience in the IT field.",
+		"description": "My approach goes beyond writing code; it's about turning ideas into fast and effective applications, where every detail is designed to create unique digital experiences, so users enjoy the experience from the very first click.",
+		"CTA1": "Learn more about me",
+		"CTA2": "Download cv"
+	},
 
-  "header": {
-    "content": [
-      {
-        "id": 1,
-        "label": "Contact me",
-        "ariaLabel": "contact me",
-        "href": "#contact-section"
-      },
-      {
-        "id": 2,
-        "label": "Experience",
-        "ariaLabel": "pricing plans",
-        "href": "#experience-section"
-      },
-      {
-        "id": 3,
-        "label": "Skills",
-        "ariaLabel": "frequently asked questions",
-        "href": "#skills-section"
-      }
-    ]
-  },
+	"header": {
+		"content": [
+			{
+				"id": 1,
+				"label": "Contact me",
+				"ariaLabel": "contact me",
+				"href": "#contact-section"
+			},
+			{
+				"id": 2,
+				"label": "Experience",
+				"ariaLabel": "pricing plans",
+				"href": "#experience-section"
+			},
+			{
+				"id": 3,
+				"label": "Skills",
+				"ariaLabel": "frequently asked questions",
+				"href": "#skills-section"
+			}
+		]
+	},
 
-  "experience": {
-    "title": "Experience.",
-    "freelance": {
-      "timeLine": "August 2024",
-      "title": "Freelance Developer",
-      "dates": "08/2024 - present",
-      "content": [
-        "I develop landing pages that reflect the brand identity of each business.",
-        "I build customized online stores (e-commerce) tailored to specific needs.",
-        "I design and develop scalable web applications optimized for performance and accessibility.",
-        "I create digital solutions adapted to different business needs, enhancing online presence and user experience."
-      ]
-    },
-    "gravitad": {
-      "timeLine": "August 2024",
-      "title": "Dazlabs - Frontend Developer",
-      "dates": "08/2024 - present",
-      "content": [
-        "I develop user interfaces using React.js, ensuring performance and scalability.",
-        "I build functional and responsive web applications.",
-        "I work closely with the UX/UI team to accurately translate designs into interfaces.",
-        "I collaborate with the backend team to integrate features and ensure smooth communication between services.",
-        "We follow the Scrum methodology to organize tasks, encourage collaboration, and meet deadlines."
-      ]
-    }
-  },
+	"experience": {
+		"title": "Experience.",
+		"freelance": {
+			"timeLine": "August 2024",
+			"title": "Freelance Developer",
+			"dates": "08/2024 - present",
+			"content": [
+				"I develop landing pages that reflect the brand identity of each business.",
+				"I build customized online stores (e-commerce) tailored to specific needs.",
+				"I design and develop scalable web applications optimized for performance and accessibility.",
+				"I create digital solutions adapted to different business needs, enhancing online presence and user experience."
+			]
+		},
+		"gravitad": {
+			"timeLine": "August 2024",
+			"title": "Dazlabs - Frontend Developer",
+			"dates": "08/2024 - present",
+			"content": [
+				"I develop user interfaces using React.js, ensuring performance and scalability.",
+				"I build functional and responsive web applications.",
+				"I work closely with the UX/UI team to accurately translate designs into interfaces.",
+				"I collaborate with the backend team to integrate features and ensure smooth communication between services.",
+				"We follow the Scrum methodology to organize tasks, encourage collaboration, and meet deadlines."
+			]
+		}
+	},
 
-  "skill-set": {
-    "frontend": {
-      "label": "Frontend",
-      "content": [
-        "HTML",
-        "CSS",
-        "React.js",
-        "Tailwind CSS",
-        "Javascript",
-        "Next.js",
-        "TypeScript"
-      ]
-    },
-    "backend": {
-      "label": "Backend",
-      "content": [
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "MongoDB",
-        "NestJS",
-        "REST API",
-        "GraphQL API"
-      ]
-    },
-    "tools": {
-      "label": "Tools",
-      "content": ["Figma", "Postman", "Jira", "Git", "Github"]
-    },
-    "mobile": {
-      "label": "Mobile",
-      "content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
-    }
-  },
+	"skill-set": {
+		"frontend": {
+			"label": "Frontend",
+			"content": [
+				"HTML",
+				"CSS",
+				"React.js",
+				"Tailwind CSS",
+				"Javascript",
+				"Next.js",
+				"TypeScript"
+			]
+		},
+		"backend": {
+			"label": "Backend",
+			"content": [
+				"Node.js",
+				"Express.js",
+				"PostgreSQL",
+				"MongoDB",
+				"NestJS",
+				"REST API",
+				"GraphQL API"
+			]
+		},
+		"tools": {
+			"label": "Tools",
+			"content": ["Figma", "Postman", "Jira", "Git", "Github"]
+		},
+		"mobile": {
+			"label": "Mobile",
+			"content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
+		}
+	},
 
-  "toaster": {
-    "contact": {
-      "loading": "Sending...",
-      "success": "Message sent!",
-      "error": "An error occurred"
-    },
-    "preferences": {
-      "lang": "Idioma cambiado",
-      "theme": "Theme changed"
-    }
-  },
+	"toaster": {
+		"contact": {
+			"loading": "Sending...",
+			"success": "Message sent!",
+			"error": "An error occurred"
+		},
+		"preferences": {
+			"lang": "Idioma cambiado",
+			"theme": "Theme changed"
+		}
+	},
 
-  "contact-form": {
-    "title": "Every great project starts with a plan.",
-    "description": "Send me a message, and I will get back to you shortly to explore how we can collaborate together.",
-    "subtitle": "Contact me!",
+	"contact-form": {
+		"title": "Every great project starts with a plan.",
+		"description": "Send me a message, and I will get back to you shortly to explore how we can collaborate together.",
+		"subtitle": "Contact me!",
 
-    "inputs": [
-      {
-        "type": "text",
-        "name": "name",
-        "id": "name",
-        "label": "Name",
-        "placeholder": "Sebastian Perez"
-      },
-      {
-        "type": "text",
-        "name": "email",
-        "id": "email",
-        "label": "Email",
-        "placeholder": "example@gmail.com"
-      }
-    ],
+		"inputs": [
+			{
+				"type": "text",
+				"name": "name",
+				"id": "name",
+				"label": "Name",
+				"placeholder": "Sebastian Perez"
+			},
+			{
+				"type": "text",
+				"name": "email",
+				"id": "email",
+				"label": "Email",
+				"placeholder": "example@gmail.com"
+			}
+		],
 
-    "textarea": {
-      "label": "Tell me the reason for your message.",
-      "placeholder": "Your message..."
-    },
+		"textarea": {
+			"label": "Tell me the reason for your message.",
+			"placeholder": "Your message..."
+		},
 
-    "buttonLabel": {
-      "submit": "Send",
-      "cancel": "Cancel"
-    }
-  },
+		"buttonLabel": {
+			"submit": "Send",
+			"cancel": "Cancel"
+		}
+	},
 
-  "footer": {
-    "subtitle": "Let's connect!",
-    "content": [
-      {
-        "id": 1,
-        "title": "Location",
-        "description": "Argentina, Buenos Aires"
-      },
-      {
-        "id": 2,
-        "title": "Email",
-        "description": "sebastian.perez.jobs@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Phone",
-        "description": "+54 1132830604"
-      }
-    ]
-  }
+	"footer": {
+		"subtitle": "Let's connect!",
+		"content": [
+			{
+				"id": 1,
+				"title": "Location",
+				"description": "Argentina, Buenos Aires"
+			},
+			{
+				"id": 2,
+				"title": "Email",
+				"description": "sebastian.perez.jobs@gmail.com"
+			},
+			{
+				"id": 3,
+				"title": "Phone",
+				"description": "+54 1132830604"
+			}
+		]
+	}
 }

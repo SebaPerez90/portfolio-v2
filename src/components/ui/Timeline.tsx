@@ -1,5 +1,5 @@
 'use client';
-import { useScroll, useTransform, motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
 interface TimelineEntry {

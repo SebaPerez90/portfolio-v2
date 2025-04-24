@@ -1,18 +1,15 @@
-import type { LocaleNavLinks } from "@/types/index";
-import { useTranslation } from "react-i18next";
+import type { LocaleNavLinks } from '@/types/index';
+import { useTranslation } from 'react-i18next';
 
 interface NavegationLinksProps {
   disappear: string;
   flexDirection: string;
 }
 
-const NavegationLinks = ({
-  disappear,
-  flexDirection,
-}: NavegationLinksProps) => {
+const NavegationLinks = ({ disappear, flexDirection }: NavegationLinksProps) => {
   const { t } = useTranslation();
 
-  const navLinks = t("header.content", { returnObjects: true });
+  const navLinks = t('header.content', { returnObjects: true });
 
   return (
     // We use this prop when we want to hide the desktop menu

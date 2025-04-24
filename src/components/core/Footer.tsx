@@ -1,9 +1,9 @@
+import type { LocaleData } from '@/types';
 import { useTranslation } from 'react-i18next';
-import SocialLinks from './SocialLinks';
+import { FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { HiOutlineMailOpen } from 'react-icons/hi';
-import { FaPhoneAlt } from 'react-icons/fa';
-import type { LocaleData } from '@/types';
+import SocialLinks from './SocialLinks';
 
 const iconDictionary: { [key: number | string]: JSX.Element } = {
   1: <FaLocationDot size={20} />,

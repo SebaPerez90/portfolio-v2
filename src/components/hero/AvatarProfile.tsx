@@ -1,4 +1,4 @@
-import avatar_profile from "@/assets/avatar-profile.webp";
+import avatar_profile from '@/assets/avatar-profile.webp';
 
 const AvatarProfile = () => {
   return (

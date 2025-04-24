@@ -2,8 +2,8 @@ import englishIcon from '@/assets/english-icon.png';
 import spanishIcon from '@/assets/spanish-icon.png';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger } from '@/components/ui/select';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next'
 import toast from 'react-hot-toast';
+import { useTranslation } from 'react-i18next';
 import { IoMdInformationCircle } from 'react-icons/io';
 
 export function LanguageSelect() {
@@ -11,7 +11,7 @@ export function LanguageSelect() {
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('lang') || 'en');
 
   useEffect(() => {
-    i18n.changeLanguage(currentLang)
+    i18n.changeLanguage(currentLang);
     localStorage.setItem('lang', currentLang);
   }, [currentLang, i18n]);
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export interface CardSkillProps {
   title: string;
@@ -6,11 +6,7 @@ export interface CardSkillProps {
   delayAnimation: number;
 }
 
-const CardSkill = ({
-  title,
-  skillsContent,
-  delayAnimation,
-}: CardSkillProps) => {
+const CardSkill = ({ title, skillsContent, delayAnimation }: CardSkillProps) => {
   return (
     <motion.div
       transition={{ delay: delayAnimation, duration: 0.3 }}

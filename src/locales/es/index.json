@@ -1,159 +1,159 @@
 {
-  "hero": {
-    "strong": "+3 años de experiencia  |  Buenos Aires, Argentina.",
-    "description": "Desarrollo software a medida cuidando siempre los detalles y necesidades de cada negocio. Hoy día estoy incursionando en el desarrollo mobile y enfoncado en seguir creciendo como profesional.",
-    "CTA1": "Conocé más sobre mi",
-    "CTA2": "Descargar cv"
-  },
+	"hero": {
+		"strong": "+3 años de experiencia  |  Buenos Aires, Argentina.",
+		"description": "Desarrollo software a medida cuidando siempre los detalles y necesidades de cada negocio. Hoy día estoy incursionando en el desarrollo mobile y enfoncado en seguir creciendo como profesional.",
+		"CTA1": "Conocé más sobre mi",
+		"CTA2": "Descargar cv"
+	},
 
-  "header": {
-    "content": [
-      {
-        "id": 1,
-        "label": "Contáctame",
-        "ariaLabel": "contactame",
-        "href": "#contact-section"
-      },
-      {
-        "id": 2,
-        "label": "Experiencia",
-        "ariaLabel": "precio de los planes",
-        "href": "#experience-section"
-      },
-      {
-        "id": 3,
-        "label": "Habilidades",
-        "ariaLabel": "preguntas frecuentes",
-        "href": "#skills-section"
-      }
-    ]
-  },
+	"header": {
+		"content": [
+			{
+				"id": 1,
+				"label": "Contáctame",
+				"ariaLabel": "contactame",
+				"href": "#contact-section"
+			},
+			{
+				"id": 2,
+				"label": "Experiencia",
+				"ariaLabel": "precio de los planes",
+				"href": "#experience-section"
+			},
+			{
+				"id": 3,
+				"label": "Habilidades",
+				"ariaLabel": "preguntas frecuentes",
+				"href": "#skills-section"
+			}
+		]
+	},
 
-  "experience": {
-    "title": "Experiencia.",
-    "freelance": {
-      "timeLine": "Agosto 2024",
-      "title": "Desarrollador Freelance",
-      "dates": "08/2024 - presente",
-      "content": [
-        "Desarrollo landing pages que reflejan la identidad del negocio.",
-        "Desarrollo tiendas online personalizadas (e-commerce).",
-        "Diseño y desarrollo aplicaciones web escalables, optimizadas en rendimiento y accesibilidad.",
-        "Creo soluciones digitales adaptadas a distintas necesidades comerciales, mejorando la presencia online y la experiencia del usuario."
-      ]
-    },
-    "gravitad": {
-      "timeLine": "Agosto 2024",
-      "title": "Dazlabs - Desarrollador Frontend",
-      "company": "Dazlabs",
-      "dates": "08/2024 - presente",
-      "content": [
-        "Desarrollo interfaces de usuario con React.js, asegurando rendimiento y escalabilidad.",
-        "Desarrollo aplicaciones web funcionales y responsivas.",
-        "Trabajo en conjunto con el equipo de UX/UI para traducir diseños en interfaces precisas.",
-        "Colaboro con el equipo backend para integrar funcionalidades y garantizar una comunicación fluida entre servicios.",
-        "Seguimos la metodología Scrum para organizar tareas, fomentar la colaboración y cumplir con los deadlines."
-      ]
-    }
-  },
+	"experience": {
+		"title": "Experiencia.",
+		"freelance": {
+			"timeLine": "Agosto 2024",
+			"title": "Desarrollador Freelance",
+			"dates": "08/2024 - presente",
+			"content": [
+				"Desarrollo landing pages que reflejan la identidad del negocio.",
+				"Desarrollo tiendas online personalizadas (e-commerce).",
+				"Diseño y desarrollo aplicaciones web escalables, optimizadas en rendimiento y accesibilidad.",
+				"Creo soluciones digitales adaptadas a distintas necesidades comerciales, mejorando la presencia online y la experiencia del usuario."
+			]
+		},
+		"gravitad": {
+			"timeLine": "Agosto 2024",
+			"title": "Dazlabs - Desarrollador Frontend",
+			"company": "Dazlabs",
+			"dates": "08/2024 - presente",
+			"content": [
+				"Desarrollo interfaces de usuario con React.js, asegurando rendimiento y escalabilidad.",
+				"Desarrollo aplicaciones web funcionales y responsivas.",
+				"Trabajo en conjunto con el equipo de UX/UI para traducir diseños en interfaces precisas.",
+				"Colaboro con el equipo backend para integrar funcionalidades y garantizar una comunicación fluida entre servicios.",
+				"Seguimos la metodología Scrum para organizar tareas, fomentar la colaboración y cumplir con los deadlines."
+			]
+		}
+	},
 
-  "skill-set": {
-    "frontend": {
-      "label": "Frontend",
-      "content": [
-        "HTML",
-        "CSS",
-        "React.js",
-        "Tailwind CSS",
-        "Javascript",
-        "Next.js",
-        "TypeScript"
-      ]
-    },
-    "backend": {
-      "label": "Backend",
-      "content": [
-        "Node.js",
-        "NestJS",
-        "MongoDB",
-        "Express.js",
-        "PostgreSQL",
-        "REST API",
-        "GraphQL API"
-      ]
-    },
-    "tools": {
-      "label": "Herramientas",
-      "content": ["Figma", "Postman", "Jira", "Git", "Github"]
-    },
-    "mobile": {
-      "label": "Mobile",
-      "content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
-    }
-  },
+	"skill-set": {
+		"frontend": {
+			"label": "Frontend",
+			"content": [
+				"HTML",
+				"CSS",
+				"React.js",
+				"Tailwind CSS",
+				"Javascript",
+				"Next.js",
+				"TypeScript"
+			]
+		},
+		"backend": {
+			"label": "Backend",
+			"content": [
+				"Node.js",
+				"NestJS",
+				"MongoDB",
+				"Express.js",
+				"PostgreSQL",
+				"REST API",
+				"GraphQL API"
+			]
+		},
+		"tools": {
+			"label": "Herramientas",
+			"content": ["Figma", "Postman", "Jira", "Git", "Github"]
+		},
+		"mobile": {
+			"label": "Mobile",
+			"content": ["React Native", "Expo", "Expo SQLite", "Android Studio"]
+		}
+	},
 
-  "toaster": {
-    "contact": {
-      "loading": "Enviando...",
-      "success": "Mensaje enviado!",
-      "error": "Ocurrió un error"
-    },
-    "preferences": {
-      "lang": "Language changed",
-      "theme": "Tema cambiado"
-    }
-  },
+	"toaster": {
+		"contact": {
+			"loading": "Enviando...",
+			"success": "Mensaje enviado!",
+			"error": "Ocurrió un error"
+		},
+		"preferences": {
+			"lang": "Language changed",
+			"theme": "Tema cambiado"
+		}
+	},
 
-  "contact-form": {
-    "title": "Todo gran proyecto comienza con un plan.",
-    "description": "Enviame un mensaje y en la brevedad voy comunicarme contigo para descubrir como podemos colaborar juntos.",
-    "subtitle": "Contáctame!",
-    "inputs": [
-      {
-        "type": "text",
-        "name": "name",
-        "id": "name",
-        "label": "Nombre",
-        "placeholder": "Sebastian Perez"
-      },
-      {
-        "type": "text",
-        "name": "email",
-        "id": "email",
-        "label": "Correo electrónico",
-        "placeholder": "example@gmail.com"
-      }
-    ],
+	"contact-form": {
+		"title": "Todo gran proyecto comienza con un plan.",
+		"description": "Enviame un mensaje y en la brevedad voy comunicarme contigo para descubrir como podemos colaborar juntos.",
+		"subtitle": "Contáctame!",
+		"inputs": [
+			{
+				"type": "text",
+				"name": "name",
+				"id": "name",
+				"label": "Nombre",
+				"placeholder": "Sebastian Perez"
+			},
+			{
+				"type": "text",
+				"name": "email",
+				"id": "email",
+				"label": "Correo electrónico",
+				"placeholder": "example@gmail.com"
+			}
+		],
 
-    "textarea": {
-      "label": "Cuentame el motivo de tu mensaje.",
-      "placeholder": "Tu mensaje..."
-    },
+		"textarea": {
+			"label": "Cuentame el motivo de tu mensaje.",
+			"placeholder": "Tu mensaje..."
+		},
 
-    "buttonLabel": {
-      "submit": "Enviar",
-      "cancel": "Cancelar"
-    }
-  },
+		"buttonLabel": {
+			"submit": "Enviar",
+			"cancel": "Cancelar"
+		}
+	},
 
-  "footer": {
-    "subtitle": "Conectemos!",
-    "content": [
-      {
-        "id": 1,
-        "title": "Ubicación",
-        "description": "Argentina,Buenos Aires"
-      },
-      {
-        "id": 2,
-        "title": "Correo electrónico",
-        "description": "sebastian.perez.jobs@gmail.com"
-      },
-      {
-        "id": 3,
-        "title": "Teléfono",
-        "description": "+54 1132830604"
-      }
-    ]
-  }
+	"footer": {
+		"subtitle": "Conectemos!",
+		"content": [
+			{
+				"id": 1,
+				"title": "Ubicación",
+				"description": "Argentina,Buenos Aires"
+			},
+			{
+				"id": 2,
+				"title": "Correo electrónico",
+				"description": "sebastian.perez.jobs@gmail.com"
+			},
+			{
+				"id": 3,
+				"title": "Teléfono",
+				"description": "+54 1132830604"
+			}
+		]
+	}
 }

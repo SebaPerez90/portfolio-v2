@@ -13,9 +13,9 @@ export type LocaleNavLinks = {
 };
 
 export type LocaleProjectRequestForm = {
-  type: string
-  name: string
-  id: string
-  label: string
-  placeholder: string
-}
+  type: string;
+  name: string;
+  id: string;
+  label: string;
+  placeholder: string;
+};

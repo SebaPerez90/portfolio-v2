@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 import { IoMdInformationCircle } from 'react-icons/io';
 
 const ThemeButton = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
