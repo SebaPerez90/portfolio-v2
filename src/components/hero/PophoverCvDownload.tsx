@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const PophoverCvDownload = ({ label }: { label: string }) => {
   return (
     <Popover>
-      <PopoverTrigger>
+      <PopoverTrigger asChild>
         <Button size={'lg'} variant={'outline'}>
           {label}
           <FaRegFileAlt size={18} />

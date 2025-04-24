@@ -1,4 +1,3 @@
-import avatar_image from '@/assets/avatar-profile.webp';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
@@ -27,35 +26,30 @@ const socialLinks = [
 
 const SocialLinks = ({ subtitle }: { subtitle: string }) => {
   return (
-    <div className="row-center">
-      <figure className="w-28 h-28 rounded-full overflow-hidden">
-        <img src={avatar_image} loading="lazy" alt="avatar_image" className="size-full object-cover" />
-      </figure>
-      <nav className="col-center  mt-6">
-        <h2 className="text-2xl font-bold text-custom-black dark:text-white text-center">{subtitle}</h2>
-        <ul className="row-center gap-1 mt-6a">
-          {socialLinks.map((link, index) => (
-            <li key={index} className="group">
-              <a
-                href={link.path}
-                aria-label="link de red social"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="col-center gap-2"
-              >
-                <span className={`${link.styles} hover:duration-150 duration-150 hover:opacity-80 p-3 text-white rounded-full`}>
-                  {link.icon}
-                </span>
-                <span className="text-xs font-medium opacity-0 group-hover:opacity-100 row-center gap-1 transition-opacity duration-150 text-custom-black dark:text-white">
-                  {link.label}
-                  <HiOutlineExternalLink size={10} />
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+    <nav className="flex flex-col items-center gap-8">
+      <h2 className="text-xl font-medium text-custom-black dark:text-white">{subtitle}</h2>
+      <ul className="row-center">
+        {socialLinks.map((link, index) => (
+          <li key={index} className="group">
+            <a
+              href={link.path}
+              aria-label="link de red social"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="col-center gap-2"
+            >
+              <span className={`${link.styles} hover:duration-150 duration-150 hover:opacity-80 p-3 text-white rounded-full`}>
+                {link.icon}
+              </span>
+              <span className="text-xs font-medium opacity-0 group-hover:opacity-100 row-center gap-1 transition-opacity duration-150 text-custom-black dark:text-white">
+                {link.label}
+                <HiOutlineExternalLink size={10} />
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 

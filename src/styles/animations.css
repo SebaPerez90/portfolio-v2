@@ -83,20 +83,6 @@
 	}
 }
 
-@keyframes loading {
-	35% {
-		transform: translateY(-0.2em);
-	}
-
-	70% {
-		transform: translateY(0.2em);
-	}
-
-	100% {
-		transform: translateY(0em);
-	}
-}
-
 @keyframes image-filter {
 	0% {
 		filter: grayscale(100%) blur(10px);

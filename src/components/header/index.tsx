@@ -1,3 +1,4 @@
+import avatar_profile from '@/assets/avatar-profile.webp';
 import { LanguageSelect } from '@/components/header/LanguageSelect';
 import MobileMenu from '@/components/header/MobileMenu';
 import NavegationLinks from '@/components/header/NavegationLinks';
@@ -20,15 +21,24 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      ref={headerRef}
-      className="duration-1000 flex items-center fixed w-full justify-between px-7 py-5 backdrop-blur-md z-50"
-    >
-      <span className="text-custom-blue dark:text-custom-orange font-extrabold text-2xl">SebaPerez</span>
-      <NavegationLinks disappear={'hidden md:block'} flexDirection={'row-center'} />
-      <div className="max-[768px]:hidden row-center gap-3">
-        <LanguageSelect />
-        <ThemeButton />
+    <header ref={headerRef} className="w-full py-3 backdrop-blur-md z-50 fixed px-10 flex items-center justify-between">
+      <div className="flex items-center justify-between w-[clamp(600px,100%,1300px)] mx-auto">
+        <div className="flex items-center gap-2">
+          <figure className="rounded-full overflow-hidden size-[3em]">
+            <img
+              src={avatar_profile}
+              loading="lazy"
+              alt="avatar-profile-image"
+              className="size-full object-cover animate-[image-filter_600ms_ease-out_forwards]"
+            />
+          </figure>
+          <span className="text-dark dark:text-white text-lg architects-daughter-regular">Seba Perez</span>
+        </div>
+        <NavegationLinks disappear={'hidden lg:block'} flexDirection={'row-center'} />
+        <div className="lg:flex hidden row-center gap-3">
+          <LanguageSelect />
+          <ThemeButton />
+        </div>
       </div>
       {/* mobile menu is available when viewport width is less than 640 px */}
       <MobileMenu />

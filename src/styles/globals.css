@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -101,7 +101,6 @@
 		scroll-behavior: smooth;
 		box-sizing: border-box;
 		font: inherit;
-		/* font-size: calc(9px + 0.5vw); */
 		transition: background ease-out 400ms;
 		font-family: "Poppins", sans-serif;
 
@@ -129,6 +128,30 @@ body {
 	::-webkit-scrollbar-thumb {
 		background-color: #bb5dff;
 		border-radius: 10px;
+	}
+
+	/* google fonts */
+	.signika-negative {
+		font-family: "Signika Negative", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.architects-daughter-regular {
+		font-family: "Architects Daughter", cursive;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	/* swipper bullets */
+	.custom-swiper .swiper-pagination-bullet {
+		background-color: #cbd5e1;
+		opacity: 1;
+	}
+	.custom-swiper .swiper-pagination-bullet-active {
+		background-color: #9f3ff9;
+		scale: 1.3;
 	}
 }
 

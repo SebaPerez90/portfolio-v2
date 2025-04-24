@@ -11,17 +11,18 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="w-full relative bg-white dark:bg-dark-neutral row-center h-screen overflow-x-hidden lg:gap-32 px-6 md:px-14"
+      className="w-full relative bg-white dark:bg-dark-neutral row-center h-screen overflow-x-hidden lg:gap-32 px-8"
     >
       <Beams />
-      <div className="animate-[image-filter_300ms_ease-out_forwards] w-[50%] md:w-[32em] col-center items-start z-40">
-        <h1 className="text-7xl dark:text-slate-50 text-custom-black font-black">
-          <strong className="dark:text-dark-sky text-7xl text-custom-blue dark:text-custom-orange">Front</strong>
-          end
+      <div className="animate-[image-filter_300ms_ease-out_forwards] w-full lg:w-[40%] col-center items-start z-40 ">
+        <h1 className="text-[130px] leading-[0.8] dark:text-slate-50 text-custom-black font-black architects-daughter-regular">
+          <strong className="text-[130px] leading-[0.8] dark:text-dark-sky text-custom-blue dark:text-custom-orange architects-daughter-regular">
+            Frontend
+          </strong>
           <br />
           Developer
         </h1>
-        <p className="paragraph xl:mt-4">
+        <p className="paragraph mt-10">
           <strong>{t('hero.strong')}</strong>
           <br />
           <br />

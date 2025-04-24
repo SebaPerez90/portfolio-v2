@@ -126,7 +126,7 @@
 		],
 
 		"textarea": {
-			"label": "Cuentame el motivo de tu mensaje.",
+			"label": "Escribe tu mensaje",
 			"placeholder": "Tu mensaje..."
 		},
 

@@ -3,27 +3,24 @@ import { motion } from 'framer-motion';
 export interface CardSkillProps {
   title: string;
   skillsContent: string[];
-  delayAnimation: number;
 }
 
-const CardSkill = ({ title, skillsContent, delayAnimation }: CardSkillProps) => {
+const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
   return (
     <motion.div
-      transition={{ delay: delayAnimation, duration: 0.3 }}
+      transition={{ duration: 0.2 }}
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
-      viewport={{ once: true }}
-      className="shadow-xl rounded-lg w-[25em] min-h-[17em] bg-white flex flex-col justify-center gap-8 items-center px-3 pb-8 dark:bg-dark-deep dark:border-dark-soft
-         shadow-purple-500/10 dark:shadow-transparent"
+      className="shadow-2xl rounded-lg w-[25em] min-h-[17em] bg-white flex flex-col justify-center gap-8 items-center px-3 pb-8 dark:bg-dark-deep dark:border-dark-soft
+         shadow-purple-500/10 dark:shadow-transparent border-2 border-purple-500/10 mx-auto cursor-pointer"
     >
       <h3 className="title text-center text-custom-black mt-8">{title}</h3>
       <ul className="flex items-center gap-3 w-[92%] flex-wrap justify-center">
         {skillsContent.map((element, index: number) => (
           <motion.li
-            transition={{ delay: 0.9, staggerChildren: 5 }}
+            transition={{ delay: 0.3 }}
             initial={{ y: 70, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
             key={index}
             className="text-base lg:text-xs border font-semibold border-dark-soft/30 py-2 pl-2 pr-3 rounded-lg w-max bg-ligth-soft dark:bg-dark-soft dark:text-white  text-custom-black flex items-center gap-1"
           >

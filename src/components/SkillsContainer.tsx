@@ -1,6 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import CardSkill from './CardSkill';
 
+import { Autoplay, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 const SkillsContainer = () => {
   const { t } = useTranslation();
 
@@ -24,17 +30,30 @@ const SkillsContainer = () => {
   ];
 
   return (
-    <section id="skills-section" className="bg-ligth-soft dark:bg-dark-soft flex flex-col items-center gap-32 py-56 w-full">
+    <section id="skills-section" className="bg-white dark:bg-dark-soft flex flex-col items-center gap-32 py-32 w-full">
       <h1 className="dark:text-slate-50 text-4xl font-bold text-custom-black">Habilidades.</h1>
-      <div className="w-full flex justify-center px-8 flex-wrap gap-20">
-        {skillsData.map((skill, index) => (
-          <CardSkill
-            key={index}
-            delayAnimation={index * 0.2}
-            title={skill.title}
-            skillsContent={skill.skillsContent as Array<string>}
-          />
-        ))}
+      <div className="w-[90%] max-w-[1000px]">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          autoplay={{
+            delay: 2000,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            950: {
+              slidesPerView: 2,
+            },
+          }}
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          className="h-[22em] custom-swiper"
+        >
+          {skillsData.map((skill, index) => (
+            <SwiperSlide key={index} className="py-5 custom-swiper">
+              <CardSkill title={skill.title} skillsContent={skill.skillsContent as Array<string>} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );
