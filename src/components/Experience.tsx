@@ -79,7 +79,7 @@ const Experience = () => {
             className="text-blue-600 dark:text-custom-orange cursor-pointer text-base"
           >
             <a
-              href="https://codevibes.vercel.app/"
+              href="https://seba-perez.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 mt-16"
