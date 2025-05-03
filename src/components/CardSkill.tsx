@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 export interface CardSkillProps {
   title: string;
@@ -17,8 +17,8 @@ const CardSkill = ({ title, skillsContent }: CardSkillProps) => {
       <ul className="flex items-center gap-3 w-[92%] flex-wrap justify-center">
         {skillsContent.map((element, index: number) => (
           <motion.li
-            transition={{ delay: 0.3 }}
-            initial={{ y: 70, opacity: 0 }}
+            transition={{ delay: index * 0.1 }}
+            initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             key={index}
             className="text-base lg:text-xs border font-semibold border-dark-soft/30 py-2 pl-2 pr-3 rounded-lg w-max bg-ligth-soft dark:bg-dark-soft dark:text-white  text-custom-black flex items-center gap-1"

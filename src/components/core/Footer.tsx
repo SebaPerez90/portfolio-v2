@@ -60,7 +60,7 @@ const Footer = () => {
         <SocialLinks subtitle={t('footer.subtitle')} />
       </div>
       <hr className="h-[2px] mt-8 bg-gray-300 w-[70%]" />
-      <span className="w-max font-medium text-sm my-2 text-custom-black dark:text-white">© 2024 Portfolio | Sebastian Perez</span>
+      <span className="w-max font-medium text-sm my-2 text-custom-black dark:text-white">© 2025 Portfolio | Sebastian Perez</span>
     </footer>
   );
 };
